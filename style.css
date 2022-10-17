@@ -1,0 +1,17 @@
+#contener{
+    height: 400px;
+    width: 600px;
+    outline: 1px solid black;
+    position: relative;
+}
+#character {
+    position: absolute;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin: 0;
+
+}
+
