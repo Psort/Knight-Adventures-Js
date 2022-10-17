@@ -1,0 +1,39 @@
+#contener{
+    height: 1000px;
+    width: 1600px;
+    outline: 1px solid black;
+    margin: auto;
+}
+#player {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    position: relative;
+    background-color: black;
+    top: 950px ;
+    left: 0px;
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+
+
+@keyframes jump {
+    0%{
+        top:950px ;
+    }
+    30%
+    {
+        top:900px ;
+    }
+    50%{
+        top:850px ;
+    }
+    80%{
+        top:900px ;
+    }
+    100%{
+        top:950px ;
+    }
+}
