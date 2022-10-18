@@ -1,14 +1,52 @@
-#contener{
-    height: 400px;
-    width: 1680px;
-    outline: 1px solid black;
-    position: relative;
+:root {
+   --pixel-size: 10;
 }
-#character {
-    position: absolute;
-    display: block;
-    background: black;
-    border-radius: 50%;
-    height: 25px;
-    width: 25px;
-    margin: 0;
+
+body {
+   background: #96ffc1;
+}
+
+.Character {
+   width: calc(32px * var(--pixel-size));
+   height: calc(32px * var(--pixel-size));
+   overflow: hidden;
+   position: relative;
+   margin: 4em auto;
+}
+
+.Character_spritesheet {
+   animation: moveSpritesheet 1s steps(10) infinite;
+   width: calc(350px * var(--pixel-size));
+   position: absolute;
+
+}
+.Character_shadow {
+   position: absolute;
+   top: -60px;
+   width: calc(32px * var(--pixel-size));
+   height: calc(32px * var(--pixel-size));
+}
+
+.pixelart {
+   image-rendering: pixelated;
+}
+
+.face-right {
+   top: calc(-100px * var(--pixel-size));
+}
+.face-up {
+   top: calc(-150px * var(--pixel-size));
+}
+.face-left {
+   top: calc(-200px * var(--pixel-size));
+}
+
+
+@keyframes moveSpritesheet {
+   from {
+      transform: translate3d(0px,0,0)
+   }
+   to {
+      transform: translate3d(-100%,0,0)
+   }
+}
