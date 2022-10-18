@@ -1,4 +1,5 @@
 const player = document.getElementById("player");
+const platform = document.getElementById("platform");
 player.style.left = '0px'
 function jump (){
     if(player.classList != "jump"){
@@ -12,6 +13,9 @@ function jump (){
 function right (){
     if (parseInt(player.style.left) <= 500) {
         player.style.left = parseInt(player.style.left) + 50 + 'px'
+        // if (player.style.left === platform.style.marginLeft){
+        //     player.style.top = platform.style.marginTop
+        // }
     }
 }
 function left (){
