@@ -94,6 +94,10 @@ function create_map(map) {
     }
     document.getElementById('container').innerHTML = divh
 }
+
+
+const runValue = 10
+
 function charMove() {
     document.getElementById("Character-moves").src="sheet/_Run.png";
 }
@@ -101,27 +105,27 @@ function charStop() {
     document.getElementById("Character-moves").src = "sheet/_Idle.png";
 }
 function up() {
-    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - 10 + "px"
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - runValue + "px"
     charMove();
 }
 function upStop() {
-    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - 10 + "px"
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - runValue + "px"
     charStop();
 }
 function down() {
-    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + 10 + "px"
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
     charMove();
 }
 function downStop() {
-    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + 10 + "px"
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
     charStop()
 }
 function left() {
-    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - 10 + "px"
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
     charMove();
 }
 function leftStop() {
-    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - 10 + "px"
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
     charStop()
 }
 function right() {
