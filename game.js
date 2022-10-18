@@ -4,7 +4,7 @@ var animation_time = 25
 initGame();
 
 function initGame() {
-    element_map(test);
+    element_map(mapA);
     console.log(maps)
     document.getElementById("Character").style.left = "-500px"
     document.getElementById("Character").style.top = "-1200px"

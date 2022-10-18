@@ -17,8 +17,8 @@ body{
 #vertical_road{
    background-image: url("images/dr_1.png");
  }
-#water{
-   background-image: url("images/woda.png");
+#water_horizontal{
+   background-image: url("images/water.png");
  }
 #horizontal_road
 {
@@ -26,11 +26,46 @@ body{
 }
 #cross_road
 {
-    background-image: url("images/dr_7.png");
+    background-image: url("images/cross_road.png");
 }
 #grass {
     background-image: url("images/zywoplot.png");
 }
+
+#right_down {
+    background-image: url("images/dr_5.png");
+}
+
+#right_up {
+    background-image: url("images/dr_2.png");
+}
+
+#left_down {
+     background-image: url("images/dr_3.png");
+}
+
+#left_up {
+     background-image: url("images/dr_4.png");
+}
+
+#bridge {
+    background-image: url("images/most");
+}
+
+#t_up {
+    background-image: url("images/t_up");
+}
+#t_down {
+    background-image: url("images/t_down");
+}
+#t_right {
+    background-image: url("images/t_right");
+}
+#t_left {
+    background-image: url("images/t_left");
+}
+
+
 :root {
    --pixel-size: 10;
 }
