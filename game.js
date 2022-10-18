@@ -1,86 +1,86 @@
-let elementL_right_up = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
+let elementL_right_up  = [['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','vertical_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass']]
 
-let elementL_left_up = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
+let elementL_left_up = [['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass']]
 
-let elementL_left_down = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
+let elementL_left_down = [['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                        ['horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass']]
 
-let elementL_right_down = [['grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
+let elementL_right_down = [['grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                        ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass']]
 
-let elementI = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
+let elementI = [['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass']]
 
-let element_line = [['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
+let element_line = [['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass'],
+                    ['grass','grass','grass','grass','grass','grass','grass','grass','grass','grass','grass']]
 
-let elementX = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'vertical_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
+let elementX = [['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','vertical_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road','horizontal_road'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass'],
+                ['grass','grass','grass','grass','grass','vertical_road','grass','grass','grass','grass','grass']]
 
 
 function create_map(map) {
@@ -88,32 +88,49 @@ function create_map(map) {
     for (let i = 0; i < 11; i++) {
         let divw = ''
         for (let j = 0; j < 11; j++) {
-            divw += "<div id ='" + map[i][j] + "' class = 'w'></div>"
+            divw += "<div id ='"+map[i][j]+"' class = 'w'></div>"
         }
         divh += "<div>" + divw + "</div>"
     }
-    divh += "<div id=\"Character\">\n" +
-        "   <img class=\"Character_shadow pixelart\" src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png\" alt=\"Shadow\" />\n" +
-        "   <img class=\"Character_spritesheet pixelart face-down\" src=\"sheet/_Idle.png\" alt=\"Character\" />\n" +
-        "</div>"
-    console.log(divh)
     document.getElementById('container').innerHTML = divh
 }
-
+function charMove() {
+    document.getElementById("Character-moves").src="sheet/_Run.png";
+}
+function charStop() {
+    document.getElementById("Character-moves").src = "sheet/_Idle.png";
+}
 function up() {
-    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top) - 10 + "px"
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - 10 + "px"
+    charMove();
+}
+function upStop() {
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - 10 + "px"
+    charStop();
+}
+function down() {
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + 10 + "px"
+    charMove();
+}
+function downStop() {
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + 10 + "px"
+    charStop()
+}
+function left() {
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - 10 + "px"
+    charMove();
+}
+function leftStop() {
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - 10 + "px"
+    charStop()
 }
 function right() {
-    if (parseInt(player.style.left) <= 500) {
-        player.style.left = parseInt(player.style.left) + 50 + 'px'
-        // if (player.style.left === platform.style.marginLeft){
-        //     player.style.top = platform.style.marginTop
-        // }
-    }
-    document.getElementById('container').innerHTML = divh
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + 10 + "px"
+    charMove();
 }
-function right() {
-    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left) + 10 + "px"
+function rightStop() {
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + 10 + "px"
+    charStop()
 }
 
 initGame();
@@ -123,30 +140,15 @@ function initGame() {
     document.getElementById("Character").style.left = "-500px"
     document.getElementById("Character").style.top = "-1150px"
     document.onkeydown = (e) => {
-        e = e || window.event;
-        if (e.keyCode === 38) up()
-        else if (e.keyCode === 37) left()
-        else if (e.keyCode === 39) right()
-        else if (e.keyCode === 40) down()
+      e = e || window.event;
+      if (e.keyCode === 38) setTimeout(() => {upStop()}, 250, up())
+      else if (e.keyCode === 37) setTimeout(() => {leftStop()}, 250, left())
+      else if (e.keyCode === 39) setTimeout(() => {rightStop()}, 250, right())
+      else if (e.keyCode === 40) setTimeout(() => {downStop()}, 250, down())
 
-        create_map(element_line);
+}
+    console.log(document.getElementById("Character_spritesheet pixelart face-down"))
 
+    // Your game can start here, but define separate functions, don't write everything in here :)
 
-        // initGame();
-        //
-        // function initGame() {
-        //
-        //     // Your game can start here, but define separate functions, don't write everything in here :)
-        //
-        // }
-
-
-        initGame();
-
-        function initGame() {
-
-            // Your game can start here, but define separate functions, don't write everything in here :)
-
-        }
-
-    }
+}
