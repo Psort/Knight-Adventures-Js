@@ -1,47 +1,30 @@
-const runValue = 2
-
+const runValue = 7
+const changePosition = change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
 function charMove() {
     document.getElementById("Character-moves").src="sheet/_Run.png";
 }
 function charStop() {
     document.getElementById("Character-moves").src = "sheet/_Idle.png";
 }
-function up() {
+function up(changePosiotion, charMovement) {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - runValue + "px"
-    change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
-    charMove();
+    changePosiotion
+    charMovement;
 }
-function upStop() {
-    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - runValue + "px"
-    charStop();
-}
-function down() {
+function down(changePosiotion, charMovement) {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
-    change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
-    charMove();
+    changePosiotion
+    charMovement;
 }
-function downStop() {
-    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
-    charStop()
-}
-function left() {
+function left(changePosiotion, charMovement) {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
-    change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
-    charMove();
+    changePosiotion
+    charMovement;
 }
-function leftStop() {
-    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
-    charStop()
-}
-
-function right() {
+function right(changePosiotion, charMovement) {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
-    change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
-    charMove();
-}
-function rightStop() {
-    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
-    charStop()
+    changePosiotion
+    charMovement;
 }
 
 function change_posiotion_in_table(top,left) {
@@ -56,20 +39,33 @@ function change_posiotion_in_table(top,left) {
     }
 }
 function click_move() {
+    const alias = {
+        "uparrow": 38,
+        "downarrow": 40,
+        "leftarrow": 37,
+        "rightarrow": 39
+    }
+    let map = {};
     document.onkeydown = (e) => {
         e = e || window.event;
-        if (e.keyCode === 38) setTimeout(() => {
-            upStop()
-        }, animation_time, up())
-        else if (e.keyCode === 37) setTimeout(() => {
-            leftStop()
-        }, animation_time, left())
-        else if (e.keyCode === 39) setTimeout(() => {
-            rightStop()
-        }, animation_time, right())
-        else if (e.keyCode === 40) setTimeout(() => {
-            downStop()
-        }, animation_time, down())
+        if (e.keyCode === alias["uparrow"]) {up(changePosition, charMove())}
+        else if (e.keyCode === alias["leftarrow"]) {left(changePosition, document.getElementById("Character-moves").src="sheet/_Runleft.png")}
+        else if (e.keyCode === alias["rightarrow"]) {right(changePosition, charMove())}
+        else if (e.keyCode === alias["downarrow"]) {down(null, charMove())}
+    }
+    document.onkeyup = (e) => {
+        e = e || window.event;
+        if (e.keyCode === alias["uparrow"]) {
+            up(null, charStop())
+        }else if (e.keyCode === alias["leftarrow"]){
+            left(null, document.getElementById("Character-moves").src="sheet/_Idleleft.png")
+        }else if (e.keyCode === alias["rightarrow"]){
+            right(changePosition, charStop())
+        }else if (e.keyCode === alias["downarrow"]){
+            down(changePosition, charStop())
+        }
 
     }
+    map[e.keyCode] = e.type == 'keydown';
 }
+

@@ -1,6 +1,5 @@
 
 var player = {"x": 0, "y": 0}
-var animation_time = 25
 initGame();
 
 function initGame() {
