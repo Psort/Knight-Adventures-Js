@@ -92,7 +92,7 @@ function create_map(map) {
         }
         divh += "<div>" + divw + "</div>"
     }
-    divh += "<div class=\"Character\">\n" +
+    divh += "<div id=\"Character\">\n" +
         "   <img class=\"Character_shadow pixelart\" src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png\" alt=\"Shadow\" />\n" +
         "   <img class=\"Character_spritesheet pixelart face-down\" src=\"sheet/_Idle.png\" alt=\"Character\" />\n" +
         "</div>"
@@ -100,23 +100,33 @@ function create_map(map) {
     document.getElementById('container').innerHTML = divh
 }
 
-
-
-create_map(element_line);
-
-
-// document.onkeydown = (e) => {
-//   e = e || window.event;
-//   if (e.keyCode === 38) jump()
-//   else if (e.keyCode === 37) left()
-//   else if (e.keyCode === 39) right()
-//
-// }
-
+function up() {
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - 10 + "px"
+}
+function down() {
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + 10 + "px"
+}
+function left() {
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - 10 + "px"
+}
+function right() {
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + 10 + "px"
+}
 
 initGame();
 
 function initGame() {
+    create_map(element_line);
+    document.getElementById("Character").style.left = "-500px"
+    document.getElementById("Character").style.top = "-1150px"
+    document.onkeydown = (e) => {
+      e = e || window.event;
+      if (e.keyCode === 38) up()
+      else if (e.keyCode === 37) left()
+      else if (e.keyCode === 39) right()
+      else if (e.keyCode === 40) down()
+
+}
 
     // Your game can start here, but define separate functions, don't write everything in here :)
 

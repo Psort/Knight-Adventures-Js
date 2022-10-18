@@ -24,27 +24,26 @@
    --pixel-size: 10;
 }
 
-.Character {
-   width: calc(32px * var(--pixel-size));
-   height: calc(32px * var(--pixel-size));
+#Character {
+   width: calc(16px * var(--pixel-size));
+   height: calc(16px * var(--pixel-size));
    overflow: hidden;
    position: relative;
-    top: -275px;
-    left: -475px;
    margin: 4em auto;
 }
 
 .Character_spritesheet {
    animation: moveSpritesheet 1s steps(10) infinite;
-   width: calc(350px * var(--pixel-size));
+   width: calc(175px * var(--pixel-size));
    position: absolute;
 
 }
 .Character_shadow {
    position: absolute;
-   top: -60px;
-   width: calc(32px * var(--pixel-size));
-   height: calc(32px * var(--pixel-size));
+   top: 43px;
+    left: 40px;
+   width: calc(8px * var(--pixel-size));
+   height: calc(8px * var(--pixel-size));
 }
 
 .pixelart {
