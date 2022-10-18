@@ -3,6 +3,8 @@
     width: 550px;
     outline: 1px solid black;
     margin: auto;
+:root {
+   --pixel-size: 10;
 }
 .w
 {
@@ -10,6 +12,26 @@
     height: 50px;
     width: 50px;
     float: left;
+
+.Character {
+   width: calc(32px * var(--pixel-size));
+   height: calc(32px * var(--pixel-size));
+   overflow: hidden;
+   position: relative;
+   margin: 4em auto;
+}
+
+.Character_spritesheet {
+   animation: moveSpritesheet 1s steps(10) infinite;
+   width: calc(350px * var(--pixel-size));
+   position: absolute;
+
+}
+.Character_shadow {
+   position: absolute;
+   top: -60px;
+   width: calc(32px * var(--pixel-size));
+   height: calc(32px * var(--pixel-size));
 }
 #vertical_road{
    background-color: aqua;
@@ -21,4 +43,27 @@
 #grass
 {
     background-color: greenyellow;
+
+.pixelart {
+   image-rendering: pixelated;
+}
+
+.face-right {
+   top: calc(-100px * var(--pixel-size));
+}
+.face-up {
+   top: calc(-150px * var(--pixel-size));
+}
+.face-left {
+   top: calc(-200px * var(--pixel-size));
+}
+
+
+@keyframes moveSpritesheet {
+   from {
+      transform: translate3d(0px,0,0)
+   }
+   to {
+      transform: translate3d(-100%,0,0)
+   }
 }
