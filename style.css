@@ -1,6 +1,6 @@
 #contener{
     height: 400px;
-    width: 600px;
+    width: 1680px;
     outline: 1px solid black;
     position: relative;
 }
@@ -12,6 +12,3 @@
     height: 25px;
     width: 25px;
     margin: 0;
-
-}
-
