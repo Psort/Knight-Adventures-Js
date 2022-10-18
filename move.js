@@ -8,9 +8,7 @@ function charStop() {
 }
 function up() {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - runValue + "px"
-    top = document.getElementById("Character").style.top
-    left = document.getElementById("Character").style.left
-    change_posiotion_in_table(top,left)
+    change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
     charMove();
 }
 function upStop() {
@@ -19,9 +17,7 @@ function upStop() {
 }
 function down() {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
-    top = document.getElementById("Character").style.top
-    left = document.getElementById("Character").style.left
-    change_posiotion_in_table(top,left)
+    change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
     charMove();
 }
 function downStop() {
@@ -30,9 +26,7 @@ function downStop() {
 }
 function left() {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
-    top = document.getElementById("Character").style.top
-    left = document.getElementById("Character").style.left
-    change_posiotion_in_table(top,left)
+    change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
     charMove();
 }
 function leftStop() {
@@ -42,24 +36,40 @@ function leftStop() {
 
 function right() {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
-    top = document.getElementById("Character").style.top
-    left = document.getElementById("Character").style.left
-    change_posiotion_in_table(top,left)
+    change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
     charMove();
 }
 function rightStop() {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
     charStop()
 }
+
 function change_posiotion_in_table(top,left) {
     left = parseInt(left)
     top = parseInt(top)
-    console.log(left, top)
-
+    console.log("top",top,"left",left)
     for (let i = -1; i < 12; i++) {
-        if (left > (-460 + (i * 100)) && left < (-360 + (i * 100))) console.log("x", player['x'] = (i + 1))
+        if (left > (-460 + (i * 100)) && left < (-360 + (i * 100))) player['x'] = (i + 1)
     }
     for (let i = -1; i < 12; i++) {
-        if (top > (-1180 + (i * 100)) && top < (-1080 + (i * 100))) console.log("y", player['x'] = (i + 1))
+        if (top > (-1180 + (i * 100)) && top < (-1080 + (i * 100))) player['y'] = (i + 1)
+    }
+}
+function click_move() {
+    document.onkeydown = (e) => {
+        e = e || window.event;
+        if (e.keyCode === 38) setTimeout(() => {
+            upStop()
+        }, animation_time, up())
+        else if (e.keyCode === 37) setTimeout(() => {
+            leftStop()
+        }, animation_time, left())
+        else if (e.keyCode === 39) setTimeout(() => {
+            rightStop()
+        }, animation_time, right())
+        else if (e.keyCode === 40) setTimeout(() => {
+            downStop()
+        }, animation_time, down())
+
     }
 }
