@@ -9,6 +9,11 @@ function charStop() {
 function up() {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - runValue + "px"
     change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
+    if (parseInt(document.getElementById("Character").style.top) < -1278){
+      document.getElementById("Character").style.top = "-178px";
+        player["position_map"][0] = player["position_map"][0]-1
+        change_map()
+    }
     charMove();
 }
 function upStop() {
@@ -18,6 +23,11 @@ function upStop() {
 function down() {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
     change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
+    if (parseInt(document.getElementById("Character").style.top) > -178){
+      document.getElementById("Character").style.top = "-1278px";
+        player["position_map"][0] = player["position_map"][0]-1
+        change_map()
+    }
     charMove();
 }
 function downStop() {
@@ -27,6 +37,11 @@ function downStop() {
 function left() {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
     change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
+    if (parseInt(document.getElementById("Character").style.left) < -542){
+      document.getElementById("Character").style.left = "542px";
+        player["position_map"][1] = player["position_map"][1]-1
+        change_map()
+    }
     charMove();
 }
 function leftStop() {
@@ -37,6 +52,11 @@ function leftStop() {
 function right() {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
     change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
+    if (parseInt(document.getElementById("Character").style.left) > 542){
+      document.getElementById("Character").style.left = "-542px";
+        player["position_map"][1] = player["position_map"][1]+1
+        change_map()
+    }
     charMove();
 }
 function rightStop() {
@@ -47,7 +67,6 @@ function rightStop() {
 function change_posiotion_in_table(top,left) {
     left = parseInt(left)
     top = parseInt(top)
-    console.log("top",top,"left",left)
     for (let i = -1; i < 12; i++) {
         if (left > (-460 + (i * 100)) && left < (-360 + (i * 100))) player['x'] = (i + 1)
     }
@@ -72,4 +91,6 @@ function click_move() {
         }, animation_time, down())
 
     }
+}
+function change_map() {
 }
