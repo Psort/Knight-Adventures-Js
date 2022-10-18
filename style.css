@@ -1,10 +1,17 @@
+#container{
+    height: 550px;
+    width: 550px;
+    outline: 1px solid black;
+    margin: auto;
 :root {
    --pixel-size: 10;
 }
-
-body {
-   background: #96ffc1;
-}
+.w
+{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    float: left;
 
 .Character {
    width: calc(32px * var(--pixel-size));
@@ -26,6 +33,16 @@ body {
    width: calc(32px * var(--pixel-size));
    height: calc(32px * var(--pixel-size));
 }
+#vertical_road{
+   background-color: aqua;
+ }
+#horizontal_road
+{
+    background-color: aqua;
+}
+#grass
+{
+    background-color: greenyellow;
 
 .pixelart {
    image-rendering: pixelated;
