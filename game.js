@@ -90,8 +90,13 @@ function create_map(map) {
         for (let j = 0; j < 11; j++) {
             divw += "<div id ='"+map[i][j]+"' class = 'w'></div>"
         }
-        divh += "<div id = 'h" + i + " ' class = 'h'>" + divw + "</div>"
+        divh += "<div>" + divw + "</div>"
     }
+    divh += "<div class=\"Character\">\n" +
+        "   <img class=\"Character_shadow pixelart\" src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png\" alt=\"Shadow\" />\n" +
+        "   <img class=\"Character_spritesheet pixelart face-down\" src=\"sheet/_Idle.png\" alt=\"Character\" />\n" +
+        "</div>"
+    console.log(divh)
     document.getElementById('container').innerHTML = divh
 }
 
