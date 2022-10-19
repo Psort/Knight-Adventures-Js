@@ -74,10 +74,10 @@ function change_posiotion_in_table() {
     let top = parseInt(document.getElementById("Character").style.top)
     console.log("left:", left,"top:", top)
     for (let i = 0; i < 11; i++) {
-        if (left > (-460 + (i * 100)) && left < (-360 + (i * 100))) player['x'] = (i + 1)
+        if (left > (-560 + (i * 100)) && left < (-360 + (i * 100))) player['x'] = (i )
     }
     for (let i = 0; i < 11; i++) {
-        if (top > (-1180 + (i * 100)) && top < (-1080 + (i * 100))) player['y'] = (i + 1)
+        if (top > (-1280 + (i * 100)) && top < (-1080 + (i * 100))) player['y'] = (i)
     }
 }
 function click_move() {
@@ -127,8 +127,16 @@ function try_collision(direction){
 
 }
 function edge_map(edge){
-    if (edge == "up" && player['position_map'][1]==0 && parseInt(document.getElementById("Character").style.top) < -1270 ) return false
-    if (edge == "down" && player['position_map'][1]==9 && parseInt(document.getElementById("Character").style.top) == -175 ) return false
-    if (edge == "left" && player['position_map'][0]==0 && parseInt(document.getElementById("Character").style.left) == -535 ) return false
-    if (edge == "right" && player['position_map'][0]==9 && parseInt(document.getElementById("Character").style.left) == 535 ) return false
+    if (edge == "up" && player['position_map'][1]==0 && parseInt(document.getElementById("Character").style.top) < -1270 ) {
+        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*4) + "px"
+    }
+    if (edge == "down" && player['position_map'][1]==9 && parseInt(document.getElementById("Character").style.top) == -175 ) {
+        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*4) + "px"
+    }
+    if (edge == "left" && player['position_map'][0]==0 && parseInt(document.getElementById("Character").style.left) == -535 ){
+        document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*4) + "px"
+    }
+    if (edge == "right" && player['position_map'][0]==9 && parseInt(document.getElementById("Character").style.left) == 535 ) {
+        document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*4) + "px"
+    }
 }
