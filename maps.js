@@ -396,17 +396,17 @@ let map5_E = [['water_1', 'water_horizontal', 'water_horizontal', 'water_horizon
 ['beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'water_merge'],
 ['water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full']]
 
-let buildingInterior = [['floor_left_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_right_up'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
-['floor_left_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_right_down']]
+let buildingInterior = [['flower_carpet_left_up', 'flower_carpet_up', 'flower_carpet_up', 'flower_carpet_right_up', 'floor_up', 'floor_up', 'picture2', 'fireplace', 'picture3', 'floor_up', 'floor_right_up'],
+['night_stand', 'bed', 'carpet_inside', 'gift2', 'floor_inside', 'floor_inside', 'floor_inside', 'sofa2', 'floor_inside', 'floor_inside', 'floor_right'],
+['carpet_left', 'carpet_inside', 'carpet_inside', 'carpet_right', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['carpet_left', 'carpet_inside', 'table', 'picture1', 'floor_inside', 'floor_inside', 'dining_table_left', 'dining_table_center', 'dining_table_right', 'floor_inside', 'gift4'],
+['carpet_left_down', 'carpet_inside', 'carpet_inside', 'carpet_right_down', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'food1'],
+['floor_left_flower', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'food2'],
+['closet2', 'carpet2_inside', 'carpet2_inside', 'closet1', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['carpet2_left', 'carpet2_inside', 'carpet2_inside', 'carpet2_right', 'floor_inside', 'floor_inside', 'floor_inside', 'mirror', 'tiles_inside', 'tiles_up', 'toilet'],
+['floor_left_flower2', 'carpet2_inside', 'carpet2_inside', 'sofa', 'floor_inside', 'floor_inside', 'floor_inside', 'sink', 'tiles_inside', 'tiles_inside', 'tiles_right'],
+['carpet2_left', 'carpet2_inside', 'carpet2_inside', 'carpet2_right', 'floor_inside', 'floor_inside', 'floor_inside', 'tiles_left', 'tiles_inside', 'bath', 'tiles_right'],
+['gift3', 'bed2', 'carpet2_down', 'carpet2_right_down', 'floor_right_down', 'floor_down', 'floor_left_down', 'bath_flower', 'tiles_down', 'tiles_down', 'gift1']]
 
 
 function element_map(map) {
