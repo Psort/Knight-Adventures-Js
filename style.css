@@ -26,6 +26,10 @@ body{
    background-image: url("images/woda_2.png");
  }
 
+#waterfall{
+   background-image: url("images/waterfall.png");
+ }
+
 #water_3{
    background-image: url("images/woda_3.png");
  }

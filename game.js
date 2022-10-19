@@ -4,7 +4,7 @@ var animation_time = 25
 initGame();
 
 function initGame() {
-    element_map(level_2_mapI);
+    element_map(level_2_mapD);
     console.log(maps)
 
     click_move();
