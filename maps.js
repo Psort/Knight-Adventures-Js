@@ -108,7 +108,7 @@ let map1_A = [['water_vertical', 'block', 'block', 'block', 'block', 'block', 'b
 ['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
 
-let map1_B = [['block', 'block', 'block', 'block','block', 'block', 'block', 'block', 'block', 'block', 'block'],
+let map1_B = [['block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'block', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
@@ -120,7 +120,7 @@ let map1_B = [['block', 'block', 'block', 'block','block', 'block', 'block', 'bl
 ['grass', 'grass', 'grass', 'grass', 'grass', 'right_down', 'horizontal_road', 'horizontal_road', 'left_up', 'grass', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
 
-let map1_C = [['block', 'block', 'block', 'block','block', 'block', 'block', 'block', 'block', 'block', 'block'],
+let map1_C = [['block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block'],
 ['grass', 'grass', 'grass', 'grass', 'window', 'window', 'window', 'grass', 'grass', 'grass', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'window', 'window', 'window', 'grass', 'grass', 'block', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'window', 'door', 'window', 'grass', 'grass', 'grass', 'grass'],
