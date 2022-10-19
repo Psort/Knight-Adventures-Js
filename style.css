@@ -2,6 +2,7 @@ body{
     height: 1150px;
     background-color: greenyellow;
 }
+
 #container {
     height: 1100px;
     width: 1100px;
@@ -9,6 +10,7 @@ body{
     margin: 50px auto;
 
 }
+
 .w {
     background-color: black;
     height: 100px;
@@ -16,53 +18,52 @@ body{
     float: left;
 }
 
-#vertical_road{
-   background-image: url("images/road_vertical.png");
- }
+#vertical_road {
+    background-image: url("images/road_vertical.png");
+}
 
-#horizontal_road
-{
+#horizontal_road {
     background-image: url("images/road_horizontal.png");
 }
 
-#water_1{
-   background-image: url("images/woda_1.png");
- }
+#water_1 {
+    background-image: url("images/woda_1.png");
+}
 
-#water_2{
-   background-image: url("images/woda_2.png");
- }
+#water_2 {
+    background-image: url("images/woda_2.png");
+}
 
-#waterfall{
-   background-image: url("images/waterfall.png");
- }
+#waterfall {
+    background-image: url("images/waterfall.png");
+}
 
-#water_3{
-   background-image: url("images/woda_3.png");
- }
+#water_3 {
+    background-image: url("images/woda_3.png");
+}
 
-#water_4{
-   background-image: url("images/woda_4.png");
- }
+#water_4 {
+    background-image: url("images/woda_4.png");
+}
 
 
-#water_horizontal{
-   background-image: url("images/water.png");
- }
+#water_horizontal {
+    background-image: url("images/water.png");
+}
 
 #bridge_2 {
-   background-image: url("images/bridge_horizontal.png");
+    background-image: url("images/bridge_horizontal.png");
 }
 
-#water_vertical{
-   background-image: url("images/water_2.png");
- }
+#water_vertical {
+    background-image: url("images/water_2.png");
+}
 
 
-#cross_road
-{
+#cross_road {
     background-image: url("images/cross_road.png");
 }
+
 #grass {
     background-image: url("images/grass.png");
 }
@@ -76,11 +77,11 @@ body{
 }
 
 #left_down {
-     background-image: url("images/dr_3.png");
+    background-image: url("images/dr_3.png");
 }
 
 #left_up {
-     background-image: url("images/dr_4.png");
+    background-image: url("images/dr_4.png");
 }
 
 #bridge {
@@ -90,9 +91,11 @@ body{
 #t_up {
     background-image: url("images/t_up.png");
 }
+
 #t_down {
     background-image: url("images/t_down.png");
 }
+
 #t_right {
     background-image: url("images/t_right.png");
 }
@@ -111,6 +114,82 @@ body{
 
 #window {
     background-image: url("images/window.png");
+}
+
+#beach_corner_1 {
+    background-image: url("images/beach_corner_1.bmp");
+}
+
+#beach_corner_2 {
+    background-image: url("images/beach_corner_2.bmp");
+}
+
+#beach_right {
+    background-image: url("images/beach_right.bmp");
+}
+
+#beach_down {
+    background-image: url("images/beach_down.bmp");
+}
+
+#beach_left {
+    background-image: url("images/beach_left.bmp.bmp");
+}
+
+#water_full {
+    background-image: url("images/woda.png");
+}
+
+#temple {
+    background-image: url("images/temple.png");
+}
+
+#flowers {
+    background-image: url("images/flowers.png");
+}
+
+#wall {
+    background-image: url("images/wall.png");
+}
+
+#wall_2 {
+    background-image: url("images/wall_2.png");
+}
+
+#wall_3 {
+    background-image: url("images/wall_3.png");
+}
+
+#ruins_1 {
+    background-image: url("images/ruins_1.bmp");
+}
+
+#ruins_2 {
+    background-image: url("images/ruins_2.bmp");
+}
+
+#water_merge {
+    background-image: url("images/water_merge.png");
+}
+
+#water_merge_2 {
+    background-image: url("images/water_merge_2.png");
+}
+
+#water_right {
+    background-image: url("images/water_right.png");
+}
+
+#water_left {
+    background-image: url("images/water_left.png");
+}
+
+#block {
+    background-image: url("images/block.png");
+}
+
+#area {
+    background-image: url("images/area.bmp");
 }
 
 #floor_down {
@@ -150,43 +229,46 @@ body{
 }
 
 :root {
-   --pixel-size: 10;
+    --pixel-size: 10;
 }
 
 #Character {
-   width: calc(16px * var(--pixel-size));
-   height: calc(16px * var(--pixel-size));
-   overflow: hidden;
-   position: relative;
-   margin: 4em auto;
+    width: calc(16px * var(--pixel-size));
+    height: calc(16px * var(--pixel-size));
+    overflow: hidden;
+    position: relative;
+    margin: 4em auto;
 }
 
 .Character_spritesheet {
-   animation: moveSpritesheet 0.75s steps(10) infinite;
-   width: calc(175px * var(--pixel-size));
-   position: absolute;
+    animation: moveSpritesheet 0.75s steps(10) infinite;
+    width: calc(175px * var(--pixel-size));
+    position: absolute;
 
 }
+
 .Character_shadow {
-   position: absolute;
-   top: 43px;
+    position: absolute;
+    top: 43px;
     left: 40px;
-   width: calc(8px * var(--pixel-size));
-   height: calc(8px * var(--pixel-size));
+    width: calc(8px * var(--pixel-size));
+    height: calc(8px * var(--pixel-size));
 }
 
 .pixelart {
-   image-rendering: pixelated;
+    image-rendering: pixelated;
 }
 
 .face-right {
-   top: calc(-100px * var(--pixel-size));
+    top: calc(-100px * var(--pixel-size));
 }
+
 .face-up {
-   top: calc(-150px * var(--pixel-size));
+    top: calc(-150px * var(--pixel-size));
 }
+
 .face-left {
-   top: calc(-200px * var(--pixel-size));
+    top: calc(-200px * var(--pixel-size));
 }
 
 .screen {
@@ -195,15 +277,36 @@ body{
     outline: 1px solid black;
     margin: 50px auto;
     background-image: url("images/grass.png");
-    position: fixed;
     text-align: center;
+    position: relative;
+
+
 }
 
+button {
+    -ms-transform: translateY(750%);
+    transform: translateY(750%);
+    border: none;
+    appearance: none;
+    outline: none;
+    display: inline-block;
+    font-size: 2em;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 48px 12px 48px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #003333;
+    border: 2px solid #ffffff;
+}
+
+
 @keyframes moveSpritesheet {
-   from {
-      transform: translate3d(0px,0,0)
-   }
-   to {
-      transform: translate3d(-100%,0,0)
-   }
+    from {
+        transform: translate3d(0px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0)
+    }
 }
