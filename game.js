@@ -1,5 +1,5 @@
 
-var player = {"x": 0, "y": 0}
+var player = {"x": 0, "y": 0 ,"position_map": [0,0]}
 var animation_time = 25
 initGame();
 
