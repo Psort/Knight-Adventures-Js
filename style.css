@@ -1,6 +1,18 @@
 body{
-    height: 1150px;
-    background-color: greenyellow;
+    height: 1125px;
+    background-image: url("images/background.png");
+
+}
+#minimap{
+    height: 300px;
+    width: 300px;
+    float: right;
+    outline: 2px solid black;
+}
+.element_minimap{
+    width: 60px;
+    height: 60px;
+    float: right;
 }
 #container {
     height: 1100px;

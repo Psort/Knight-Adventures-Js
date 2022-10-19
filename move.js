@@ -1,72 +1,57 @@
 const runValue = 5
 const changePosition = change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
-
+const x = 0
+const y = 1
 function charMove() {
     document.getElementById("Character-moves").src="sheet/_Run.png";
 }
 function charStop() {
     document.getElementById("Character-moves").src = "sheet/_Idle.png";
 }
-function up(changePosiotion, charMovement) {
-    if (!edge_map("up")) {
-        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top) - runValue + "px"
-        try_collision("up")
-        change_posiotion_in_table()
-        //    changePosiotion
-    }
+function up() {
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top) - runValue + "px"
+    try_collision("up")
+    change_posiotion_in_table()
     if (parseInt(document.getElementById("Character").style.top) < -1275) {
         document.getElementById("Character").style.top = "-180px";
-        player["position_map"][0] = player["position_map"][0] - 1
+        player["position_map"][x] = player["position_map"][x] - 1
         change_map()
     }
-    charMovement;
+
 
 }
-function down(changePosiotion, charMovement) {
-    if (!edge_map("down")){
-        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
-        try_collision('down')
-        change_posiotion_in_table() //changePosiotion
-
-        }
-
+function down() {
+    document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
+    try_collision('down')
+    change_posiotion_in_table() //changePosiotion
 
     if (parseInt(document.getElementById("Character").style.top) > -180){
         document.getElementById("Character").style.top = "-1275px";
-        player["position_map"][0] = player["position_map"][0]+1
+        player["position_map"][x] = player["position_map"][x]+1
         change_map()
     }
 
-    charMovement;
 }
-function left(changePosiotion, charMovement) {
-    if (!edge_map("left")){
-        document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
-        try_collision('left')
-        change_posiotion_in_table()//changePosiotion
-    }
 
-    if (parseInt(document.getElementById("Character").style.left) < -540){
+function left() {
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
+    try_collision('left')
+    change_posiotion_in_table()//changePosiotion
+    if (parseInt(document.getElementById("Character").style.left) < -540) {
         document.getElementById("Character").style.left = "540px";
-        player["position_map"][1] = player["position_map"][1]-1
+        player["position_map"][y] = player["position_map"][y] +  -1
         change_map()
     }
-    charMovement;
 }
-function right(changePosiotion, charMovement) {
-    if (!edge_map("right")){
-        document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
-        try_collision('right')
-        change_posiotion_in_table() //        changePosiotion
-
-    }
-
+function right() {
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
+    try_collision('right')
+    change_posiotion_in_table() //        changePosiotion
     if (parseInt(document.getElementById("Character").style.left) > 540){
       document.getElementById("Character").style.left = "-540px";
-        player["position_map"][1] = player["position_map"][1]+1
+        player["position_map"][y] = player["position_map"][y]+1
         change_map()
     }
-    charMovement;
 }
 
 function change_posiotion_in_table() {
@@ -80,6 +65,7 @@ function change_posiotion_in_table() {
         if (top > (-1280 + (i * 100)) && top < (-1080 + (i * 100))) player['y'] = (i)
     }
 }
+
 function click_move() {
     const alias = {
         "uparrow": 38,
@@ -109,12 +95,7 @@ function click_move() {
 
     }
 }
-function change_map() {
-    let all_maps = [test,elementX,elementI,element_line,elementL_left_up,elementL_left_down,elementL_right_down,elementL_right_up]
-    let random_map = all_maps[Math.floor(Math.random()*all_maps.length)]
-    if (maps[player['position_map'][0]][player['position_map'][1]] == "") maps[player['position_map'][0]][player['position_map'][1]] = random_map;
-    element_map(maps[player['position_map'][0]][player['position_map'][1]]);
-}
+
 function try_collision(direction){
     let map = maps[player['position_map'][0]][player['position_map'][1]]
     console.log(player)
@@ -126,17 +107,5 @@ function try_collision(direction){
     }
 
 }
-function edge_map(edge){
-    if (edge == "up" && player['position_map'][1]==0 && parseInt(document.getElementById("Character").style.top) < -1270 ) {
-        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*4) + "px"
-    }
-    if (edge == "down" && player['position_map'][1]==9 && parseInt(document.getElementById("Character").style.top) == -175 ) {
-        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*4) + "px"
-    }
-    if (edge == "left" && player['position_map'][0]==0 && parseInt(document.getElementById("Character").style.left) == -535 ){
-        document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*4) + "px"
-    }
-    if (edge == "right" && player['position_map'][0]==9 && parseInt(document.getElementById("Character").style.left) == 535 ) {
-        document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*4) + "px"
-    }
-}
+
+
