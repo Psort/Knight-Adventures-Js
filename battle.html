@@ -16,9 +16,10 @@
         <img class="Sceleton_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />
         <img id="Skeleton-moves" class="Sceleton_spritesheet pixelart face-down" src="sheet/Skeleton%20Idle.png" alt="Sceleton" />
     </div></div>
-<button id="button-attack" onclick="attackAnimation()">Attack</button>
-<button id="button-goaway" role="button">Go away</button>
 <div id="battlescore">
+    <button id="button-attack" onclick="attackAnimation()">Attack</button>
+    <button id="button-goaway" role="button">Go away</button>
+    <div id="battleTable">
     <table>
         <tr>
             <th>Knight</th>
@@ -33,6 +34,7 @@
             <th id="skeletonAttack"></th>
         </tr>
     </table>
+    </div>
 </div>
 <script src="battle-game.js"></script>
 </body>
