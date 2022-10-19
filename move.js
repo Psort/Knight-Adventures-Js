@@ -2,6 +2,20 @@ const runValue = 5
 const changePosition = change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
 const x = 0
 const y = 1
+
+
+function try_collision(direction){
+    let map = maps[player['position_map'][0]][player['position_map'][1]]
+    let collision_blocks = ["water_vertical"]
+    console.log(map[player['y']][player['x']])
+    if(map[player['y']][player['x']] == "block"){
+        if(direction == 'up')document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*4) + "px"
+        if(direction == 'down') document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*4) + "px"
+        if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*4) + "px"
+        if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*4) + "px"
+    }
+}
+
 function charMove() {
     document.getElementById("Character-moves").src="sheet/_Run.png";
 }
@@ -24,13 +38,11 @@ function down() {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
     try_collision('down')
     change_posiotion_in_table() //changePosiotion
-
     if (parseInt(document.getElementById("Character").style.top) > -180){
         document.getElementById("Character").style.top = "-1275px";
         player["position_map"][x] = player["position_map"][x]+1
         change_map()
     }
-
 }
 
 function left() {
@@ -44,8 +56,8 @@ function left() {
     }
 }
 function right() {
-    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
-    try_collision('right')
+    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px";
+    try_collision('right');
     change_posiotion_in_table() //        changePosiotion
     if (parseInt(document.getElementById("Character").style.left) > 540){
       document.getElementById("Character").style.left = "-540px";
@@ -57,7 +69,6 @@ function right() {
 function change_posiotion_in_table() {
     let left = parseInt(document.getElementById("Character").style.left)
     let top = parseInt(document.getElementById("Character").style.top)
-    console.log("left:", left,"top:", top)
     for (let i = 0; i < 11; i++) {
         if (left > (-560 + (i * 100)) && left < (-360 + (i * 100))) player['x'] = (i )
     }
@@ -95,17 +106,3 @@ function click_move() {
 
     }
 }
-
-function try_collision(direction){
-    let map = maps[player['position_map'][0]][player['position_map'][1]]
-    console.log(player)
-    if(map[player['x']][player['y']] == 'water'){
-        if(direction == 'up')document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*4) + "px"
-        if(direction == 'down') document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*4) + "px"
-        if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*4) + "px"
-        if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*4) + "px"
-    }
-
-}
-
-
