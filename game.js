@@ -6,12 +6,24 @@ initGame();
 function initGame() {
     element_map(test);
     render_minimap()
-    console.log(document.getElementById("minimap").innerHTML)
-    console.log(maps)
     document.getElementById("Character").style.left = "-500px"
     document.getElementById("Character").style.top = "-1200px"
     click_move();
 
     // Your game can start here, but define separate functions, don't write everything in here :)
+}
+
+function toggleScreen(id,toggle) {
+    let element = document.getElementById(id);
+    let display = (toggle) ? 'block' : 'none';
+    element.style.display = display;
 
 }
+
+function startGame(){
+    this.toggleScreen('start-screen',false);
+    this.toggleScreen('container',true);
+    this.toggleScreen('Character',true);
+    initGame();
+}
+
