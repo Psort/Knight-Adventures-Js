@@ -121,10 +121,10 @@ let level_1_mapB = [['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'gras
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
 
 let level_1_mapC = [['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['left_down', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
+['grass', 'grass', 'grass', 'grass', 'window', 'window', 'window', 'grass', 'grass', 'grass', 'grass'],
+['grass', 'grass', 'grass', 'grass', 'window', 'window', 'window', 'grass', 'grass', 'grass', 'grass'],
+['grass', 'grass', 'grass', 'grass', 'window', 'door', 'window', 'grass', 'grass', 'grass', 'grass'],
+['left_down', 'grass', 'grass', 'grass', 'grass', 'stairs', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'right_up', 'horizontal_road', 'horizontal_road'],
 ['bridge', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_3', 'grass', 'vertical_road', 'grass', 'grass'],
