@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
+    <link rel="stylesheet" href="battlestyle.css">
+    <script src="battle-logic.js"></script>
+    <title>Battle</title>
+</head>
+<body>
+<div id="battlearena">
+    <div id="Character">
+       <img class="Character_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />
+       <img id="Character-moves" class="Character_spritesheet pixelart face-down" src="sheet/_Idle.png" alt="Character" />
+    </div>
+    <div id="Sceleton">
+        <img class="Sceleton_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />
+        <img id="Skeleton-moves" class="Sceleton_spritesheet pixelart face-down" src="sheet/Skeleton%20Idle.png" alt="Sceleton" />
+    </div></div>
+<button id="button-attack" onclick="attackAnimation()">Attack</button>
+<button id="button-goaway" role="button">Go away</button>
+<div id="battlescore">
+    <table>
+        <tr>
+            <th>Knight</th>
+            <th>Skeleton</th>
+        </tr>
+        <tr>
+            <th id="characterHp"></th>
+            <th id="SkeletonHp"></th>
+        </tr>
+        <tr>
+            <th id="characterAttack"></th>
+            <th id="skeletonAttack"></th>
+        </tr>
+    </table>
+</div>
+<script src="battle-game.js"></script>
+</body>
+</html>

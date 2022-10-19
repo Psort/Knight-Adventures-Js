@@ -58,6 +58,30 @@ body{
    height: calc(8px * var(--pixel-size));
 }
 
+
+#Sceleton {
+   width: calc(6.3px * var(--pixel-size));
+   height: calc(9px * var(--pixel-size));
+   overflow: hidden;
+   position: relative;
+   margin: 4em auto;
+}
+
+.Sceleton_spritesheet {
+   animation: moveSpritesheet 1s steps(11) infinite;
+   width: calc(70px * var(--pixel-size));
+   position: absolute;
+
+}
+.Sceleton_shadow {
+   position: absolute;
+   top: 28px;
+   left:15px;
+   width: calc(6px * var(--pixel-size));
+   height: calc(6px * var(--pixel-size));
+}
+
+
 .pixelart {
    image-rendering: pixelated;
 }
