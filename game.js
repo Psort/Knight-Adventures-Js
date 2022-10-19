@@ -5,7 +5,7 @@ initGame();
 
 function initGame() {
 
-    element_map(level_1_mapB);
+    element_map(level_1_mapC);
     console.log(maps)
     document.getElementById("Character").style.left = "-500px"
     document.getElementById("Character").style.top = "-1200px"
