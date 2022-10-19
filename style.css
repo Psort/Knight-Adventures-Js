@@ -101,6 +101,71 @@ body{
     background-image: url("images/t_left.png");
 }
 
+#beach_corner_1 {
+    background-image: url("images/beach_corner_1.bmp");
+}
+
+#beach_corner_2 {
+    background-image: url("images/beach_corner_2.bmp");
+}
+
+#beach_right {
+    background-image: url("images/beach_right.bmp");
+}
+
+#beach_down {
+    background-image: url("images/beach_down.bmp");
+}
+
+#beach_left {
+    background-image: url("images/beach_left.bmp.bmp");
+}
+
+#water_full {
+    background-image: url("images/woda.png");
+}
+#temple {
+    background-image: url("images/temple.png");
+}
+#wall {
+    background-image: url("images/wall.png");
+}
+#wall_2 {
+    background-image: url("images/wall_2.png");
+}
+#wall_3 {
+    background-image: url("images/wall_3.png");
+}
+
+#ruins_1 {
+    background-image: url("images/ruins_1.bmp");
+}
+
+#ruins_2 {
+    background-image: url("images/ruins_2.bmp");
+}
+
+#water_merge {
+    background-image: url("images/water_merge.png");
+}
+
+#water_merge_2 {
+    background-image: url("images/water_merge_2.png");
+}
+#water_right {
+    background-image: url("images/water_right.png");
+}
+#water_left {
+    background-image: url("images/water_left.png");
+}
+
+#block {
+    background-image: url("images/block.png");
+}
+
+#area {
+    background-image: url("images/area.bmp");
+}
 
 :root {
    --pixel-size: 10;
@@ -148,9 +213,29 @@ body{
     outline: 1px solid black;
     margin: 50px auto;
     background-image: url("images/grass.png");
-    position: fixed;
     text-align: center;
+    position: relative;
+
+
 }
+
+button {
+    -ms-transform: translateY(750%);
+    transform: translateY(750%);
+    border: none;
+    appearance: none;
+    outline: none;
+    display: inline-block;
+    font-size: 2em;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 48px 12px 48px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #003333;
+    border: 2px solid #ffffff;
+}
+
 
 @keyframes moveSpritesheet {
    from {

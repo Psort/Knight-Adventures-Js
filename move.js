@@ -124,8 +124,8 @@ function try_collision(direction){
         if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*4) + "px"
         if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*4) + "px"
     }
-
 }
+
 function edge_map(edge){
     if (edge == "up" && player['position_map'][1]==0 && parseInt(document.getElementById("Character").style.top) < -1270 ) {
         document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*4) + "px"
