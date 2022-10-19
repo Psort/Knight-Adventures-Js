@@ -101,6 +101,17 @@ body{
     background-image: url("images/t_left.png");
 }
 
+#stairs {
+    background-image: url("images/schody.png");
+}
+
+#door {
+    background-image: url("images/door.png");
+}
+
+#window {
+    background-image: url("images/window.png");
+}
 
 :root {
    --pixel-size: 10;
