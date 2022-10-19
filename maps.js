@@ -1,5 +1,5 @@
 let map1_A = [['water_vertical', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block'],
-['water_vertical'gi, 'horizontal_road', 'left_down', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
+['water_vertical', 'horizontal_road', 'left_down', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['water_vertical', 'grass', 'vertical_road', 'grass', 'right_up', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass'],
 ['water_vertical', 'grass', 'vertical_road', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['water_vertical', 'grass', 'right_down', 'horizontal_road', 'left_up', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
@@ -314,13 +314,14 @@ function element_map(map) {
 }
 function render_minimap() {
 let divh = ''
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 7; i++) {
     let divw = ''
-    for (let j = 0; j < 5; j++) {
-        divw += "<div class='element_minimap'><img src='mini_map/"+mini_maps[i][j]+"_minimap.png'></div>"
+    for (let j = 4; j >= 0; j--) {
+        divw += "<div id = '"+i+j+"' class='element_minimap'></div>"
     }
     divh += "<div>" + divw + "</div>"
 }
+    console.log(divh);
     document.getElementById('minimap').innerHTML = divh
 }
 

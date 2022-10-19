@@ -7,13 +7,15 @@ body{
     height: 300px;
     width: 300px;
     float: right;
-    margin-right: 60px;
+    margin-right: 300px;
     outline: 2px solid black;
+    background-image: url("mini_map/mini_map.png");
 }
 .element_minimap{
-    max-width: 60px;
-    max-height: 60px;
+    width: 60px;
+    height: 60px;
     float: right;
+    
 }
 #container {
     height: 1100px;

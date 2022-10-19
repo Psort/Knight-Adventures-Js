@@ -6,21 +6,20 @@ const y = 1
 
 function try_collision(direction){
     let map = maps[player['position_map'][0]][player['position_map'][1]]
-    let collision_blocks = ["water_vertical"]
-    console.log(map[player['y']][player['x']])
-    if(map[player['y']][player['x']] == "block"){
-        if(direction == 'up')document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*4) + "px"
-        if(direction == 'down') document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*4) + "px"
-        if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*4) + "px"
-        if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*4) + "px"
+    let collision_blocks = ["water_vertical","water_horizontal",'block','wall',"water","water_2","water_left","water_merge","water_merge_2","water_right","waterfall","woda","woda_1","woda_2","woda_3","woda_4","wall_2","wall_3","riuns_1","ruins_2"]
+    if(collision_blocks.includes(map[player['y']][player['x']]))  {
+        if(direction == 'up')document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*5) + "px"
+        if(direction == 'down') document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*5) + "px"
+        if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*5) + "px"
+        if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*5) + "px"
     }
 }
 
 function charMove() {
-    document.getElementById("Character-moves").src="sheet/_Run.png";
+    document.getElementById("Character-moves").src="static/sheet/_Run.png";
 }
 function charStop() {
-    document.getElementById("Character-moves").src = "sheet/_Idle.png";
+    document.getElementById("Character-moves").src = "static/sheet/_Idle.png";
 }
 function up() {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top) - runValue + "px"
@@ -88,7 +87,7 @@ function click_move() {
     document.onkeydown = (e) => {
         e = e || window.event;
         if (e.keyCode === alias["uparrow"]) {up(changePosition, charMove())}
-        else if (e.keyCode === alias["leftarrow"]) {left(changePosition, document.getElementById("Character-moves").src="sheet/_Runleft.png")}
+        else if (e.keyCode === alias["leftarrow"]) {left(changePosition, document.getElementById("Character-moves").src="static/sheet/_Runleft.png")}
         else if (e.keyCode === alias["rightarrow"]) {right(changePosition, charMove())}
         else if (e.keyCode === alias["downarrow"]) {down(null, charMove())}
     }
@@ -97,7 +96,7 @@ function click_move() {
         if (e.keyCode === alias["uparrow"]) {
             up(null, charStop())
         }else if (e.keyCode === alias["leftarrow"]){
-            left(null, document.getElementById("Character-moves").src="sheet/_Idleleft.png")
+            left(null, document.getElementById("Character-moves").src="static/sheet/_Idleleft.png")
         }else if (e.keyCode === alias["rightarrow"]){
             right(changePosition, charStop())
         }else if (e.keyCode === alias["downarrow"]){
