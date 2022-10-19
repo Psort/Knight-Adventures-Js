@@ -216,7 +216,6 @@ let map2_A = [['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'g
 ['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 't_right', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
 ['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass']]
 
-
 let map3_A = [['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass'],
 ['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass'],
 ['water_vertical', 'grass', 'grass', 'grass', 'right_up', 'horizontal_road', 'horizontal_road', 't_up', 'left_down', 'grass', 'grass'],
