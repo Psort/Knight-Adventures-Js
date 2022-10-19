@@ -113,6 +113,42 @@ body{
     background-image: url("images/window.png");
 }
 
+#floor_down {
+    background-image: url("images/building/floorDown.png");
+}
+
+#floor_inside {
+    background-image: url("images/building/floorInside.png");
+}
+
+#floor_left {
+    background-image: url("images/building/floorLeft.png");
+}
+
+#floor_left_down {
+    background-image: url("images/building/floorLeftDown.png");
+}
+
+#floor_left_up {
+    background-image: url("images/building/floorLeftUp.png");
+}
+
+#floor_right {
+    background-image: url("images/building/floorRight.png");
+}
+
+#floor_right_down {
+    background-image: url("images/building/floorRightDown.png");
+}
+
+#floor_right_up {
+    background-image: url("images/building/floorRightUp.png");
+}
+
+#floor_up {
+    background-image: url("images/building/floorUp.png");
+}
+
 :root {
    --pixel-size: 10;
 }
