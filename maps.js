@@ -153,7 +153,7 @@ let map1_E = [['water_2', 'water_horizontal', 'water_horizontal', 'water_horizon
 ['grass', 'block', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'block'],
 ['grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'block'],
 ['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_up', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'block'],
-['grass', 'grass', 'grass', 'grass', 'gflowers', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'block'],
+['grass', 'grass', 'grass', 'grass', 'flowers', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'block'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'block']]
 
 let map2_E = [['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'block'],
@@ -213,8 +213,8 @@ let map2_A = [['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'g
 ['water_vertical', 'vertical_road', 'grass', 'flowers', 'right_down', 'horizontal_road', 'horizontal_road', 'left_up', 'grass', 'grass', 'grass'],
 ['water_vertical', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['water_vertical', 'right_down', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass', 'grass'],
-['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'right_down', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
+['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 't_right', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
+['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass']]
 
 
 let map3_A = [['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass'],
@@ -237,7 +237,7 @@ let map3_B = [['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'g
 ['grass', 'grass', 't_right', 'horizontal_road', 'horizontal_road', 't_left', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['water_horizontal', 'water_horizontal', 'bridge', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal'],
 ['grass', 'grass', 'vertical_road', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['water_left', 'horizontal_road', 'left_up', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
+['horizontal_road', 'horizontal_road', 'left_up', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
 
@@ -392,7 +392,7 @@ let map5_E = [['water_1', 'water_horizontal', 'water_horizontal', 'water_horizon
 ['wall_3', 'ruins_2', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'water_vertical'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'water_vertical'],
 ['grass', 'grass', 'grass', 'grass', 'wall', 'wall', 'wall', 'grass', 'wall', 'grass', 'water_vertical'],
-['block', 'ruins_1', 'wall_3', 'wall_2', 'wall_2', 'temple', 'wall_2', 'ruins_1', 'wall_2', 'ruins_2', 'water_vertical'],
+['ruins_1', 'ruins_1', 'wall_3', 'wall_2', 'wall_2', 'temple', 'wall_2', 'ruins_1', 'wall_2', 'ruins_2', 'water_vertical'],
 ['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'water_vertical'],
 ['beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'water_merge'],
 ['water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full']]

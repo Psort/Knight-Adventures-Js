@@ -4,7 +4,7 @@ var animation_time = 25
 initGame();
 
 function initGame() {
-    element_map(map4_E);
+    element_map(map5_E);
     document.getElementById("Character").style.left = "-500px"
     document.getElementById("Character").style.top = "-1200px"
     click_move();
