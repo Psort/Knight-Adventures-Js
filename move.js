@@ -1,4 +1,4 @@
-const runValue = 7
+const runValue = 5
 const changePosition = change_posiotion_in_table(document.getElementById("Character").style.top,document.getElementById("Character").style.left)
 
 function charMove() {
@@ -8,18 +8,19 @@ function charStop() {
     document.getElementById("Character-moves").src = "sheet/_Idle.png";
 }
 function up(changePosiotion, charMovement) {
-        if (!edge_map("up")){
-        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - runValue + "px"
+    if (!edge_map("up")) {
+        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top) - runValue + "px"
         try_collision("up")
         change_posiotion_in_table()
         //    changePosiotion
     }
-        if (parseInt(document.getElementById("Character").style.top) < -1278){
+    if (parseInt(document.getElementById("Character").style.top) < -1278) {
         document.getElementById("Character").style.top = "-178px";
-        player["position_map"][0] = player["position_map"][0]-1
+        player["position_map"][0] = player["position_map"][0] - 1
         change_map()
-
+    }
     charMovement;
+
 }
 function down(changePosiotion, charMovement) {
     if (!edge_map("down")){
@@ -71,6 +72,7 @@ function right(changePosiotion, charMovement) {
 function change_posiotion_in_table() {
     let left = parseInt(document.getElementById("Character").style.left)
     let top = parseInt(document.getElementById("Character").style.top)
+    console.log("left:", left,"top:", top)
     for (let i = -1; i < 12; i++) {
         if (left > (-460 + (i * 100)) && left < (-360 + (i * 100))) player['x'] = (i + 1)
     }
