@@ -337,6 +337,19 @@ let level_2_mapJ = [['water_2', 'water_horizontal', 'water_horizontal', 'water_h
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'water_vertical', 'grass']]
 
 
+let buildingInterior = [['floor_left_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_up', 'floor_right_up'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_inside', 'floor_right'],
+['floor_left_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_down', 'floor_right_down']]
+
+
 function element_map(map) {
     let divh = ''
     for (let i = 0; i < 11; i++) {
