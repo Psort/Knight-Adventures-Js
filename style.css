@@ -17,9 +17,36 @@ body{
 #vertical_road{
    background-image: url("images/dr_1.png");
  }
+
+#water_1{
+   background-image: url("images/woda_1.png");
+ }
+
+#water_2{
+   background-image: url("images/woda_2.png");
+ }
+
+#water_3{
+   background-image: url("images/woda_3.png");
+ }
+
+#water_4{
+   background-image: url("images/woda_4.png");
+ }
+
+
 #water_horizontal{
    background-image: url("images/water.png");
  }
+
+#bridge_2 {
+   background-image: url("images/most_2.png");
+}
+
+#water_vertical{
+   background-image: url("images/water_2.png");
+ }
+
 #horizontal_road
 {
     background-image: url("images/dr_6.png");
@@ -49,20 +76,21 @@ body{
 }
 
 #bridge {
-    background-image: url("images/most");
+    background-image: url("images/most.png");
 }
 
 #t_up {
-    background-image: url("images/t_up");
+    background-image: url("images/t_up.png");
 }
 #t_down {
-    background-image: url("images/t_down");
+    background-image: url("images/t_down.png");
 }
 #t_right {
-    background-image: url("images/t_right");
+    background-image: url("images/t_right.png");
 }
+
 #t_left {
-    background-image: url("images/t_left");
+    background-image: url("images/t_left.png");
 }
 
 
