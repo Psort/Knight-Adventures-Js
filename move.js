@@ -22,15 +22,22 @@ function left(changePosiotion, charMovement) {
     charMovement;
 }
 function right(changePosiotion, charMovement) {
-    document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
-    changePosiotion
+    if (!edge_map("right")){
+       document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px"
+        changePosiotion
+    }
+
+    if (parseInt(document.getElementById("Character").style.left) > 542){
+      document.getElementById("Character").style.left = "-542px";
+        player["position_map"][1] = player["position_map"][1]+1
+        change_map()
+    }
     charMovement;
 }
 
 function change_posiotion_in_table(top,left) {
     left = parseInt(left)
     top = parseInt(top)
-    console.log("top",top,"left",left)
     for (let i = -1; i < 12; i++) {
         if (left > (-460 + (i * 100)) && left < (-360 + (i * 100))) player['x'] = (i + 1)
     }
@@ -45,7 +52,7 @@ function click_move() {
         "leftarrow": 37,
         "rightarrow": 39
     }
-    let map = {};
+
     document.onkeydown = (e) => {
         e = e || window.event;
         if (e.keyCode === alias["uparrow"]) {up(changePosition, charMove())}
@@ -66,6 +73,14 @@ function click_move() {
         }
 
     }
-    map[e.keyCode] = e.type == 'keydown';
+}
+function change_map() {
 }
 
+function edge_map(edge){
+    console.log(player)
+    if (edge == "up" && player['position_map'][1]==0 && parseInt(document.getElementById("Character").style.top) < -1276 ) return false
+    if (edge == "down" && player['position_map'][1]==9 && parseInt(document.getElementById("Character").style.top) == -180 ) return false
+    if (edge == "left" && player['position_map'][0]==0 && parseInt(document.getElementById("Character").style.left) == -540 ) return false
+    if (edge == "right" && player['position_map'][0]==9 && parseInt(document.getElementById("Character").style.left) == 540 ) return false
+}
