@@ -105,3 +105,4 @@ function click_move() {
 
     }
 }
+

@@ -301,6 +301,7 @@ let map5_E = [['water_1', 'water_horizontal', 'water_horizontal', 'water_horizon
 
 let maps = [[map1_A,map1_B,map1_C,map1_D,map1_E],[map2_A,map2_B,map2_C,map2_D,map2_E],[map3_A,map3_B,map3_C,map3_D,map3_E],[map4_A,map4_B,map4_C,map4_D,map4_E],[map5_A,map5_B,map5_C,map5_D,map5_E]]
 let mini_maps = [["map1_A","map1_B","map1_C","map1_D","map1_E"],["map2_A","map2_B","map2_C","map2_D","map2_E"],["map3_A","map3_B","map3_C","map3_D","map3_E"],["map4_A","map4_B","map4_C","map4_D","map4_E"],["map5_A","map5_B","map5_C","map5_D","map5_E"]]
+
 function element_map(map) {
     let divh = ''
     for (let i = 0; i < 11; i++) {
@@ -312,19 +313,35 @@ function element_map(map) {
     }
     document.getElementById('container').innerHTML = divh
 }
+
 function render_minimap() {
 let divh = ''
-for (let i = 0; i < 7; i++) {
+for (let i = 0; i < 5; i++) {
     let divw = ''
     for (let j = 4; j >= 0; j--) {
-        divw += "<div id = '"+i+j+"' class='element_minimap'></div>"
+        divw += "<div id = '"+i+j+"' class='element_minimap'><img src='static/mini_map/"+mini_maps[i][j]+"_minimap.png'></div>"
     }
     divh += "<div>" + divw + "</div>"
 }
-    console.log(divh);
+
     document.getElementById('minimap').innerHTML = divh
 }
 
 function change_map() {
     element_map(maps[player['position_map'][0]][player['position_map'][1]]);
+    minimap_light_up()
+}
+
+function minimap_light_up() {
+    let playerId = String(player['position_map'][0])+String(player['position_map'][1])
+    for (let i = 0; i < 5; i++) {
+        for (let j = 4; j >= 0; j--) {
+            let id = String(i)+String(j);
+            if (playerId == id){
+                let light = document.getElementById(id);
+                light.style.filter = 'brightness(100%)'
+            }
+            else document.getElementById(id).style.filter = 'brightness(50%)'
+            }
+        }
 }
