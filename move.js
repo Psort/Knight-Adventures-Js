@@ -14,6 +14,23 @@ function try_collision(direction){
         if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*5) + "px"
         if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*5) + "px"
     }
+    if (map[player['y']][player['x']] == 'door') {
+        console.log(player);
+        console.log('top',document.getElementById("Character").style.top);
+        console.log('left',document.getElementById("Character").style.left);
+        maps[player['position_map'][0]][player['position_map'][1]] = buildingInterior
+        element_map(buildingInterior);
+    }
+    if (map[player['y']][player['x']] == 'floor_down') {
+        maps[player['position_map'][0]][player['position_map'][1]] = map1_C
+        element_map(map1_C);
+        player['x']= 5
+        player['y']= 4
+        document.getElementById("Character").style.top = "-785px"
+        document.getElementById("Character").style.left = "-15px"
+    }
+
+
 }
 
 function charMove() {
