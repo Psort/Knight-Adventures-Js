@@ -1,25 +1,25 @@
 let map1_A = [['water_vertical', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block'],
 ['water_vertical', 'horizontal_road', 'left_down', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['water_vertical', 'grass', 'vertical_road', 'temple', 'right_up', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass'],
+['water_vertical', 'grass', 'vertical_road', 'ruins_1', 'right_up', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass'],
 ['water_vertical', 'grass', 'vertical_road', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['water_vertical', 'grass', 'right_down', 'horizontal_road', 'left_up', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
-['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
+['water_vertical', 'grass', 'grass', 'grass', 'ruins_2', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['water_left', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'bridge', 'water_horizontal', 'water_horizontal'],
 ['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['water_vertical', 'grass', 'grass', 'grass', 'flowers', 'grass', 'grass', 'grass', 'right_down', 'horizontal_road', 'horizontal_road'],
 ['water_vertical', 'grass', 'flowers', 'grass', 'grass', 'block', 'grass', 'grass', 'flowers', 'grass', 'grass'],
-['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
+['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'ruins_2', 'grass', 'grass']]
 
 let map1_B = [['block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'flowers', 'grass'],
 ['flowers', 'grass', 'grass', 'grass', 'grass', 'flowers', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'flowers', 'grass', 'block', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'block', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'right_up', 'horizontal_road', 'horizontal_road'],
+['grass', 'grass', 'flowers', 'grass', 'block', 'grass', 'grass', 'ruins_1', 'grass', 'grass', 'grass'],
+['grass', 'block', 'grass', 'ruins_2', 'grass', 'grass', 'grass', 'grass', 'right_up', 'horizontal_road', 'horizontal_road'],
 ['grass', 'grass', 'right_up', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['water_horizontal', 'water_horizontal', 'bridge', 'water_horizontal', 'water_horizontal', 'bridge', 'water_horizontal', 'water_horizontal', 'bridge', 'water_horizontal', 'water_horizontal'],
 ['grass', 'grass', 'vertical_road', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['horizontal_road', 'horizontal_road', 'left_up', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
-['grass', 'flowers', 'grass', 'grass', 'grass', 'right_down', 'horizontal_road', 'horizontal_road', 'left_up', 'grass', 'grass'],
+['grass', 'flowers', 'grass', 'ruins_1', 'grass', 'right_down', 'horizontal_road', 'horizontal_road', 'left_up', 'grass', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
 
 let map1_C = [['block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block'],
@@ -27,7 +27,7 @@ let map1_C = [['block', 'block', 'block', 'block', 'block', 'block', 'block', 'b
 ['grass', 'flowers', 'grass', 'grass', 'window', 'window', 'window', 'grass', 'grass', 'block', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'window', 'door', 'window', 'grass', 'grass', 'grass', 'grass'],
 ['left_down', 'grass', 'grass', 'grass', 'grass', 'stairs', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
+['vertical_road', 'grass', 'grass', 'grass', 'grass', 'ruins_1', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'right_up', 'horizontal_road', 'horizontal_road'],
 ['bridge', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_3', 'grass', 'vertical_road', 'grass', 'grass'],
 ['right_down', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'bridge_2', 'horizontal_road', 'left_up', 'grass', 'grass'],
@@ -311,15 +311,15 @@ let buildingInterior = [['flower_carpet_left_up', 'flower_carpet_up', 'flower_ca
 ['carpet2_left', 'gift3', 'carpet2_inside', 'carpet2_right', 'floor_inside', 'floor_inside', 'floor_inside', 'tiles_left', 'tiles_inside', 'bath', 'tiles_right'],
 ['carpet2_left_down', 'bed2', 'carpet2_down', 'carpet2_right_down', 'floor_right_down', 'floor_down', 'floor_left_down', 'bath_flower', 'tiles_down', 'tiles_down', 'tiles_right_down']]
 
-let maps = [[map1_A,map1_B,map1_C,map1_D,map1_E],[map2_A,map2_B,map2_C,map2_D,map2_E],[map3_A,map3_B,map3_C,map3_D,map3_E],[map4_A,map4_B,map4_C,map4_D,map4_E],[map5_A,map5_B,map5_C,map5_D,map5_E]]
-let mini_maps = [["map1_A","map1_B","map1_C","map1_D","map1_E"],["map2_A","map2_B","map2_C","map2_D","map2_E"],["map3_A","map3_B","map3_C","map3_D","map3_E"],["map4_A","map4_B","map4_C","map4_D","map4_E"],["map5_A","map5_B","map5_C","map5_D","map5_E"]]
+let maps = [[map1_A, map1_B, map1_C, map1_D, map1_E], [map2_A, map2_B, map2_C, map2_D, map2_E], [map3_A, map3_B, map3_C, map3_D, map3_E], [map4_A, map4_B, map4_C, map4_D, map4_E], [map5_A, map5_B, map5_C, map5_D, map5_E]]
+let mini_maps = [["map1_A", "map1_B", "map1_C", "map1_D", "map1_E"], ["map2_A", "map2_B", "map2_C", "map2_D", "map2_E"], ["map3_A", "map3_B", "map3_C", "map3_D", "map3_E"], ["map4_A", "map4_B", "map4_C", "map4_D", "map4_E"], ["map5_A", "map5_B", "map5_C", "map5_D", "map5_E"]]
 
 function element_map(map) {
     let divh = ''
     for (let i = 0; i < 11; i++) {
         let divw = ''
         for (let j = 0; j < 11; j++) {
-            divw += "<div id ='"+map[i][j]+"' class = 'w'></div>"
+            divw += "<div id ='" + map[i][j] + "' class = 'w'></div>"
         }
         divh += "<div>" + divw + "</div>"
     }
@@ -327,34 +327,44 @@ function element_map(map) {
 }
 
 function render_minimap() {
-let divh = ''
-for (let i = 0; i < 5; i++) {
-    let divw = ''
-    for (let j = 4; j >= 0; j--) {
-        if(i==0 && j==0)divw += "<div id = '"+i+j+"' class='element_minimap'><img src='static/mini_map/"+mini_maps[i][j]+"_minimap.png'></img></div>"
-        else divw += "<div id = '"+i+j+"' class='element_minimap'></div>"
+    let divh = ''
+    for (let i = 0; i < 5; i++) {
+        let divw = ''
+        for (let j = 4; j >= 0; j--) {
+            if (i == 0 && j == 0) divw += "<div id = '" + i + j + "' class='element_minimap'><img src='static/mini_map/" + mini_maps[i][j] + "_minimap.png'></img></div>"
+            else divw += "<div id = '" + i + j + "' class='element_minimap'></div>"
+        }
+        divh += "<div>" + divw + "</div>"
     }
-    divh += "<div>" + divw + "</div>"
-}
     document.getElementById('minimap').innerHTML = divh
 }
-
+function render_inventory() {
+    let divh = ''
+    for (let i = 0; i < 7; i++) {
+        let divw = ''
+        for (let j = 3; j >= 0; j--) {
+            divw += "<div id = 'i" + i + j + "' class='item'></div>"
+        }
+        divh += "<div>" + divw + "</div>"
+    }
+    document.getElementById('inventory_items').innerHTML = divh
+}
 function change_map() {
     element_map(maps[player['position_map'][0]][player['position_map'][1]]);
     minimap_light_up()
 }
 
 function minimap_light_up() {
-    let playerId = String(player['position_map'][0])+String(player['position_map'][1])
+    let playerId = String(player['position_map'][0]) + String(player['position_map'][1])
     for (let i = 0; i < 5; i++) {
         for (let j = 4; j >= 0; j--) {
-            let id = String(i)+String(j);
-            if (playerId == id){
+            let id = String(i) + String(j);
+            if (playerId == id) {
                 let light = document.getElementById(id);
                 light.style.filter = 'brightness(100%)'
-                light.innerHTML = "<img src='static/mini_map/"+mini_maps[i][j]+"_minimap.png'>"
+                light.innerHTML = "<img src='static/mini_map/" + mini_maps[i][j] + "_minimap.png'>"
             }
             else document.getElementById(id).style.filter = 'brightness(50%)'
-            }
         }
+    }
 }

@@ -1,6 +1,7 @@
 body{
     height: 1150px;
-    background-color: greenyellow;
+    background-image: url(static/images/bg_fight.png);
+    color: white;
 }
 #battlearena {
     position: relative;
