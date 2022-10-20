@@ -31,6 +31,21 @@ body {
     filter: brightness(50%);
 }
 
+#container {
+    height: 1100px;
+    width: 1100px;
+    outline: 1px solid black;
+    margin: 50px auto;
+
+}
+
+.w {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
 .name {
     text-align: center;
     -ms-transform: translateY(300%);
@@ -71,21 +86,6 @@ body {
     background-image: url("images/screen.bmp");
 
 
-}
-
-#container {
-    height: 1100px;
-    width: 1100px;
-    outline: 1px solid black;
-    margin: 50px auto;
-
-}
-
-.w {
-    background-color: black;
-    height: 100px;
-    width: 100px;
-    float: left;
 }
 
 #vertical_road {
@@ -552,36 +552,6 @@ body {
 .face-left {
     top: calc(-200px * var(--pixel-size));
 }
-
-.screen {
-    height: 1100px;
-    width: 1100px;
-    outline: 1px solid black;
-    margin: 50px auto;
-    background-image: url("images/grass.png");
-    text-align: center;
-    position: relative;
-
-
-}
-
-button {
-    -ms-transform: translateY(750%);
-    transform: translateY(750%);
-    border: none;
-    appearance: none;
-    outline: none;
-    display: inline-block;
-    font-size: 2em;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 12px 48px 12px 48px;
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: #003333;
-    border: 2px solid #ffffff;
-}
-
 
 @keyframes moveSpritesheet {
     from {
