@@ -1,0 +1,304 @@
+body{
+    height: 1150px;
+    background-color: greenyellow;
+}
+#battlearena {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 350px;
+    width: 800px;
+    background-image: url("static/blocks/grass-arena.jpeg");
+}
+:root {
+   --pixel-size: 10;
+}
+
+#Character {
+   width: calc(20px * var(--pixel-size));
+   height: calc(32px * var(--pixel-size));
+   overflow: hidden;
+   position: relative;
+    left: -150px;
+    top: 10px;
+   margin: 4em auto;
+}
+
+.Character_spritesheet {
+   animation: moveSpritesheet 0.75s steps(10) infinite;
+   width: calc(350px * var(--pixel-size));
+   position: absolute;
+
+}
+.Character_shadow {
+   position: absolute;
+   top: 86px;
+    left: 80px;
+   width: calc(16px * var(--pixel-size));
+   height: calc(16px * var(--pixel-size));
+}
+
+
+#Sceleton {
+   width: calc(12.6px * var(--pixel-size));
+   height: calc(18px * var(--pixel-size));
+   overflow: hidden;
+   position: relative;
+    left: 150px;
+    top: -310px;
+   margin: 4em auto;
+}
+
+.Sceleton_spritesheet {
+   animation: moveSpritesheet 1s steps(11) infinite;
+   width: calc(140px * var(--pixel-size));
+   position: absolute;
+
+}
+.Sceleton_shadow {
+   position: absolute;
+   top: 50px;
+   left:30px;
+   width: calc(13px * var(--pixel-size));
+   height: calc(13px * var(--pixel-size));
+}
+
+
+.pixelart {
+   image-rendering: pixelated;
+}
+
+.face-right {
+   top: calc(-100px * var(--pixel-size));
+}
+.face-up {
+   top: calc(-150px * var(--pixel-size));
+}
+.face-left {
+   top: calc(-200px * var(--pixel-size));
+}
+
+
+@keyframes moveSpritesheet {
+   from {
+      transform: translate3d(0px,0,0)
+   }
+   to {
+      transform: translate3d(-100%,0,0)
+   }
+}
+
+
+
+#button-attack,
+#button-attack:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 10px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+    top: 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+#button-attack:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: 'Attack';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+#button-attack:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  #button-attack,
+  #button-attack:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+#button-goaway,
+.button-goaway:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(-45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: -10px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+    top: 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+#button-goaway:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: 'Coward!';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+#button-goaway:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  #button-goaway,
+  #button-goaway:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+#battlescore{
+    text-align: center;
+    font-family: Luminari;
+}
+#battleTable{
+    margin-left: auto;
+    width:52%;
+}
+

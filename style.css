@@ -1,0 +1,83 @@
+body{
+    height: 1150px;
+    background-color: greenyellow;
+}
+#container {
+    height: 1100px;
+    width: 1100px;
+    outline: 1px solid black;
+    margin: 50px auto;
+
+}
+.w {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+#vertical_road{
+   background-image: url("images/dr_1.png");
+ }
+#water{
+   background-image: url("images/woda.png");
+ }
+#horizontal_road
+{
+    background-image: url("images/dr_6.png");
+}
+#cross_road
+{
+    background-image: url("images/dr_7.png");
+}
+#grass {
+    background-image: url("images/zywoplot.png");
+}
+:root {
+   --pixel-size: 10;
+}
+
+#Character {
+   width: calc(16px * var(--pixel-size));
+   height: calc(16px * var(--pixel-size));
+   overflow: hidden;
+   position: relative;
+   margin: 4em auto;
+}
+
+.Character_spritesheet {
+   animation: moveSpritesheet 0.75s steps(10) infinite;
+   width: calc(175px * var(--pixel-size));
+   position: absolute;
+
+}
+.Character_shadow {
+   position: absolute;
+   top: 43px;
+    left: 40px;
+   width: calc(8px * var(--pixel-size));
+   height: calc(8px * var(--pixel-size));
+}
+
+.pixelart {
+   image-rendering: pixelated;
+}
+
+.face-right {
+   top: calc(-100px * var(--pixel-size));
+}
+.face-up {
+   top: calc(-150px * var(--pixel-size));
+}
+.face-left {
+   top: calc(-200px * var(--pixel-size));
+}
+
+
+@keyframes moveSpritesheet {
+   from {
+      transform: translate3d(0px,0,0)
+   }
+   to {
+      transform: translate3d(-100%,0,0)
+   }
+}

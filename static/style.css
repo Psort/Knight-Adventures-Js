@@ -1,25 +1,37 @@
-body{
+body {
     height: 1125px;
     background-image: url("images/background.png");
 
 }
 
-#minimap{
+#bloks {
+    float: right;
+    height: 1000px;
+    width: 300px;
+    margin-right: 300px;
+}
+
+#inventory {
+    background-color: #ffffff;
+    width: 300px;
+    height: 600px;
+
+}
+
+#minimap {
     height: 300px;
     width: 300px;
-    float: right;
-    margin-right: 300px;
     outline: 2px solid black;
 }
 
-.element_minimap{
+.element_minimap {
     width: 60px;
     height: 60px;
     float: right;
     filter: brightness(50%);
 }
 
-.name{
+.name {
     text-align: center;
     -ms-transform: translateY(300%);
     transform: translateY(290%);
@@ -46,6 +58,7 @@ body{
     height: 120px;
 
 }
+
 .wrapper {
     text-align: center;
 }
@@ -67,6 +80,7 @@ body{
     margin: 50px auto;
 
 }
+
 .w {
     background-color: black;
     height: 100px;
@@ -119,6 +133,7 @@ body{
 #cross_road {
     background-image: url("images/cross_road.png");
 }
+
 #grass {
     background-image: url("images/grass.png");
 }
@@ -146,9 +161,11 @@ body{
 #t_up {
     background-image: url("images/t_up.png");
 }
+
 #t_down {
     background-image: url("images/t_down.png");
 }
+
 #t_right {
     background-image: url("images/t_right.png");
 }
@@ -245,6 +262,254 @@ body{
     background-image: url("images/area.bmp");
 }
 
+#floor_down {
+    background-image: url("images/building/floorDown.png");
+}
+
+#floor_inside {
+    background-image: url("images/building/floorInside.png");
+}
+
+#floor_left {
+    background-image: url("images/building/floorLeft.png");
+}
+
+#floor_left_down {
+    background-image: url("images/building/floorLeftDown.png");
+}
+
+#floor_left_up {
+    background-image: url("images/building/floorLeftUp.png");
+}
+
+#floor_right {
+    background-image: url("images/building/floorRight.png");
+}
+
+#floor_right_down {
+    background-image: url("images/building/floorRightDown.png");
+}
+
+#floor_right_up {
+    background-image: url("images/building/floorRightUp.png");
+}
+
+#floor_up {
+    background-image: url("images/building/floorUp.png");
+}
+
+#fireplace {
+    background-image: url("images/building/fireplace.png");
+}
+
+#bed {
+    background-image: url("images/building/bed.png");
+}
+
+#bed2 {
+    background-image: url("images/building/bed2.png");
+}
+
+#closet1 {
+    background-image: url("images/building/closet1.png");
+}
+
+#closet2 {
+    background-image: url("images/building/closet2.png");
+}
+
+#sofa {
+    background-image: url("images/building/sofa.png");
+}
+
+#sofa2 {
+    background-image: url("images/building/sofa2.png");
+}
+
+#dining_table_left {
+    background-image: url("images/building/diningTableLeft.png");
+}
+
+#dining_table_center {
+    background-image: url("images/building/diningTableCenter.png");
+}
+
+#dining_table_right {
+    background-image: url("images/building/diningTableRight.png");
+}
+
+#food1 {
+    background-image: url("images/building/food1.png");
+}
+
+#food2 {
+    background-image: url("images/building/food2.png");
+}
+
+#carpet_inside {
+    background-image: url("images/building/carpet_inside.png");
+}
+
+#carpet_left {
+    background-image: url("images/building/carpetLeft.png");
+}
+
+#carpet_left_down {
+    background-image: url("images/building/carpetLeftDown.png");
+}
+
+#carpet_left_up {
+    background-image: url("images/building/carpetLeftUp.png");
+}
+
+#carpet_right {
+    background-image: url("images/building/carpetRight.png");
+}
+
+#carpet_right_down {
+    background-image: url("images/building/carpetRightDown.png");
+}
+
+#carpet_right_up {
+    background-image: url("images/building/carpetRightUp.png");
+}
+
+#carpet_up {
+    background-image: url("images/building/carpetUp.png");
+}
+
+#picture1 {
+    background-image: url("images/building/picture1.png");
+}
+
+#picture2 {
+    background-image: url("images/building/picture2.png");
+}
+
+#picture3 {
+    background-image: url("images/building/picture3.png");
+}
+
+#table {
+    background-image: url("images/building/table.png");
+}
+
+#carpet2_inside {
+    background-image: url("images/building/carpet2_inside.png");
+}
+
+#carpet2_left {
+    background-image: url("images/building/carpet2Left.png");
+}
+
+#carpet2_left_down {
+    background-image: url("images/building/carpet2LeftDown.png");
+}
+
+#carpet2_right {
+    background-image: url("images/building/carpet2Right.png");
+}
+
+#carpet2_right_down {
+    background-image: url("images/building/carpet2RightDown.png");
+}
+
+#carpet2_down {
+    background-image: url("images/building/carpet2Down.png");
+}
+
+#tiles_inside {
+    background-image: url("images/building/tiles_inside.png");
+}
+
+#tiles_left {
+    background-image: url("images/building/tilesLeft.png");
+}
+
+#tiles_left_down {
+    background-image: url("images/building/tilesLeftDown.png");
+}
+
+#tiles_right {
+    background-image: url("images/building/tilesRight.png");
+}
+
+#tiles_right_up {
+    background-image: url("images/building/tilesRightUp.png");
+}
+
+#tiles_right_down {
+    background-image: url("images/building/tilesRightDown.png");
+}
+
+#tiles_down {
+    background-image: url("images/building/tilesDown.png");
+}
+
+#tiles_up {
+    background-image: url("images/building/tilesUp.png");
+}
+
+#mirror {
+    background-image: url("images/building/mirror.png");
+}
+
+#sink {
+    background-image: url("images/building/sink.png");
+}
+
+#toilet {
+    background-image: url("images/building/toilet.png");
+}
+
+#bath {
+    background-image: url("images/building/bath.png");
+}
+
+#bath_flower {
+    background-image: url("images/building/bath_flower.png");
+}
+
+#floor_left_flower {
+    background-image: url("images/building/floorLeftFlower.png");
+}
+
+#floor_left_flower2 {
+    background-image: url("images/building/flower2.png");
+}
+
+#night_stand {
+    background-image: url("images/building/nightStand.png");
+}
+
+#flower_carpet_left_up {
+    background-image: url("images/building/flowerCarpetLeftUp.png");
+}
+
+#flower_carpet_right_up {
+    background-image: url("images/building/flowerCarpetRightUp.png");
+}
+
+#flower_carpet_up {
+    background-image: url("images/building/flowerCarpetUp.png");
+}
+
+#gift1 {
+    background-image: url("images/building/gift1.png");
+}
+
+#gift2 {
+    background-image: url("images/building/gift2.png");
+}
+
+#gift3 {
+    background-image: url("images/building/gift3.png");
+}
+
+#gift4 {
+    background-image: url("images/building/gift4.png");
+}
+
 :root {
     --pixel-size: 10;
 }
@@ -263,6 +528,7 @@ body{
     position: absolute;
 
 }
+
 .Character_shadow {
     position: absolute;
     top: 43px;
