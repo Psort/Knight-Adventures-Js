@@ -21,10 +21,30 @@ function attackAnimation(){
         setTimeout(() => {
             alert("You have won!");
             document.open("/index.html");
-            document.write('')
+            document.write('<!doctype html>\n' +
+                '<html lang="en">\n' +
+                '<head>\n' +
+                '    <link rel="stylesheet" href="static/style.css">\n' +
+                '    <title>Battle</title>\n' +
+                '</head>\n' +
+                '<body>\n' +
+                '<h1 id="endgameTitle">THANK YOU FOR PLAYING OUR GAME</h1>\n' +
+                '<div id="developers">Developers:\n' +
+                '    <br>\n' +
+                '    <div>Monika Markulis</div>\n' +
+                '    <br>\n' +
+                '    <div>Karolina Mazurczak</div>\n' +
+                '    <br>\n' +
+                '    <div>Piotr Skowron</div>\n' +
+                '    <br>\n' +
+                '    <div>Piotr Petryka</div>\n' +
+                '    </div>\n' +
+                '</body>\n' +
+                '\n')
         }, 5000)
     }
 }
+
 
 function attackphase(){
     document.getElementById("Character-moves").src="static/sheet/Attack.png"
