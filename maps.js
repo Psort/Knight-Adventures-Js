@@ -338,7 +338,17 @@ for (let i = 0; i < 5; i++) {
 }
     document.getElementById('minimap').innerHTML = divh
 }
-
+function render_inventory() {
+    let divh = ''
+    for (let i = 0; i <7; i++) {
+        let divw = ''
+        for (let j = 3; j >= 0; j--) {
+            divw += "<div id = '"+i+j+"' class='item'></div>"
+        }
+        divh += "<div>" + divw + "</div>"
+    }
+        document.getElementById('inventory_items').innerHTML = divh
+    }
 function change_map() {
     element_map(maps[player['position_map'][0]][player['position_map'][1]]);
     minimap_light_up()

@@ -17,7 +17,29 @@ body {
     height: 600px;
 
 }
-
+#inventory_head{
+    background-color: #003333;
+    width: 300px;
+    height: 120px;
+}
+#inventory_body{
+    height: 480px;
+    width: 300px;
+    background-color: black;
+} 
+#inventory_items{
+    background-color: pink;
+    width: 240px;
+    height: 420px;
+    padding-top: 30px;
+    margin: auto;
+}
+.item{
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    float: right;
+}
 #minimap {
     height: 300px;
     width: 300px;
