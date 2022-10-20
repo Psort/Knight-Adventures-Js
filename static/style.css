@@ -35,6 +35,7 @@ body {
     height: 60px;
     float: right;
     filter: brightness(50%);
+    background-color: gray;
 }
 
 #container {
