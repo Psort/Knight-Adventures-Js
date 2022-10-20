@@ -7,7 +7,7 @@ const y = 1
 function try_collision(direction){
     console.log(player);
     let map = maps[player['position_map'][0]][player['position_map'][1]]
-    let collision_blocks = ["water_vertical","water_horizontal",'block',"window",'wall',"water","water_2","water_left","water_merge","water_merge_2","water_right","waterfall","woda","woda_1","woda_2","woda_3","woda_4","wall_2","wall_3","ruins_2"]
+    let collision_blocks = ["water_vertical","water_horizontal",'block',"window",'wall',"water","water_2","water_left","water_merge","water_merge_2","water_right","waterfall","woda","woda_1","woda_2","woda_3","woda_4","wall_2","wall_3","ruins_2","flower_carpet_left_up","flower_carpet_up","flower_carpet_right_up","floor_up","picture2","fireplace","picture3","floor_right_up","night_stand","floor_right","carpet_right","carpet_left","table","picture1","dining_table_left","dining_table_center","dining_table_right","carpet_left_down","food1","floor_left_flower","food2","closet2","closet1","carpet2_left","carpet2_right","mirror","tiles_up","toilet","floor_left_flower2","sofa","sink","tiles_right","tiles_left","carpet2_down","carpet2_right_down","floor_right_down","floor_left_down","bath_flower"]
     if(collision_blocks.includes(map[player['y']][player['x']]))  {
         if(direction == 'up')document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*5) + "px"
         if(direction == 'down') document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*5) + "px"
