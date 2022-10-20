@@ -2,7 +2,7 @@
 let player = { "x": 1, "y": 1, "position_map": [0, 0] };
 initGame();
 function initGame() {
-    element_map(map1_A);
+    element_map(buildingInterior);
     render_minimap()
     document.getElementById("Character").style.left = "-400px"
     document.getElementById("Character").style.top = "-1100px"

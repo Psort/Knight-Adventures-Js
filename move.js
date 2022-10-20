@@ -5,8 +5,9 @@ const y = 1
 
 
 function try_collision(direction){
+    console.log(player);
     let map = maps[player['position_map'][0]][player['position_map'][1]]
-    let collision_blocks = ["water_vertical","water_horizontal",'block','wall',"water","water_2","water_left","water_merge","water_merge_2","water_right","waterfall","woda","woda_1","woda_2","woda_3","woda_4","wall_2","wall_3","riuns_1","ruins_2"]
+    let collision_blocks = ["water_vertical","water_horizontal",'block',"window",'wall',"water","water_2","water_left","water_merge","water_merge_2","water_right","waterfall","woda","woda_1","woda_2","woda_3","woda_4","wall_2","wall_3","ruins_2"]
     if(collision_blocks.includes(map[player['y']][player['x']]))  {
         if(direction == 'up')document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*5) + "px"
         if(direction == 'down') document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*5) + "px"
@@ -25,8 +26,8 @@ function up() {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top) - runValue + "px"
     try_collision("up")
     change_posiotion_in_table()
-    if (parseInt(document.getElementById("Character").style.top) < -1275) {
-        document.getElementById("Character").style.top = "-180px";
+    if (parseInt(document.getElementById("Character").style.top) < -1270) {
+        document.getElementById("Character").style.top = "-185px";
         player["position_map"][x] = player["position_map"][x] - 1
         change_map()
     }
@@ -37,8 +38,8 @@ function down() {
     document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + runValue + "px"
     try_collision('down')
     change_posiotion_in_table() //changePosiotion
-    if (parseInt(document.getElementById("Character").style.top) > -180){
-        document.getElementById("Character").style.top = "-1275px";
+    if (parseInt(document.getElementById("Character").style.top) > -185){
+        document.getElementById("Character").style.top = "-1270px";
         player["position_map"][x] = player["position_map"][x]+1
         change_map()
     }
@@ -48,8 +49,8 @@ function left() {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - runValue + "px"
     try_collision('left')
     change_posiotion_in_table()//changePosiotion
-    if (parseInt(document.getElementById("Character").style.left) < -540) {
-        document.getElementById("Character").style.left = "540px";
+    if (parseInt(document.getElementById("Character").style.left) < -535) {
+        document.getElementById("Character").style.left = "535px";
         player["position_map"][y] = player["position_map"][y] +  -1
         change_map()
     }
@@ -58,8 +59,8 @@ function right() {
     document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + runValue + "px";
     try_collision('right');
     change_posiotion_in_table() //        changePosiotion
-    if (parseInt(document.getElementById("Character").style.left) > 540){
-      document.getElementById("Character").style.left = "-540px";
+    if (parseInt(document.getElementById("Character").style.left) > 535){
+      document.getElementById("Character").style.left = "-535px";
         player["position_map"][y] = player["position_map"][y]+1
         change_map()
     }
