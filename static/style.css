@@ -56,10 +56,10 @@ body {
 .name {
     text-align: center;
     -ms-transform: translateY(300%);
-    transform: translateY(290%);
-    font-size: 120px;
+    transform: translateY(250%);
+    font-size: 110px;
     color: #003333;
-    font-family: Garamond, serif;
+   font-family: 'Luminari', sans-serif;
     text-shadow: 4px 17px 15px rgba(66, 68, 90, 1);
     font-weight: revert;
 }
