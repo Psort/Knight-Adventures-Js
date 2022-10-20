@@ -36,7 +36,7 @@ function attackAnimation(){
                 '    </div>\n' +
                 '    <div id="Character">\n' +
                 '       <img class="Character_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />\n' +
-                '       <img id="Character-moves" class="Character_spritesheet pixelart face-down" src="sheet/_Idle.png" alt="Character" />\n' +
+                '       <img id="Character-moves" class="Character_spritesheet pixelart face-down" src="static/sheet/_Idle.png" alt="Character" />\n' +
                 '    </div>\n' +
                 '<script src="move.js"></script>\n' +
                 '<script src="maps.js"></script>\n' +
@@ -48,16 +48,16 @@ function attackAnimation(){
 }
 
 function attackphase(){
-    document.getElementById("Character-moves").src="sheet/Attack.png"
+    document.getElementById("Character-moves").src="static/sheet/Attack.png"
     document.getElementById("Character").style.marginLeft= "550px"
-    setTimeout(() => {  document.getElementById("Character-moves").src="sheet/_Idle.png";
+    setTimeout(() => {  document.getElementById("Character-moves").src="static/sheet/_Idle.png";
     document.getElementById("Character").style.marginLeft= "325px"}, 1000)
 }
 function skeletonAttackPhase(){
-    setTimeout(() => {  document.getElementById("Skeleton-moves").src="sheet/ats3.png";
+    setTimeout(() => {  document.getElementById("Skeleton-moves").src="static/sheet/ats3.png";
      document.getElementById("Sceleton").style.marginLeft= "200px";
      document.getElementById("Sceleton").style.top= "-270px"}, 2000)
-    setTimeout(() => {  document.getElementById("Skeleton-moves").src="sheet/Skeleton Idle.png";
+    setTimeout(() => {  document.getElementById("Skeleton-moves").src="static/sheet/Skeleton Idle.png";
      document.getElementById("Sceleton").style.marginLeft= "325px";
      document.getElementById("Sceleton").style.top= "-310px"}, 3000)
 }

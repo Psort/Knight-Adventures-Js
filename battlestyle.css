@@ -8,7 +8,7 @@ body{
     width: 50%;
     height: 350px;
     width: 800px;
-    background-image: url("images/grass-arena.jpeg");
+    background-image: url("static/blocks/grass-arena.jpeg");
 }
 :root {
    --pixel-size: 10;
