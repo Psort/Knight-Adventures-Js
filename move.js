@@ -7,13 +7,75 @@ const y = 1
 function try_collision(direction){
     console.log(player);
     let map = maps[player['position_map'][0]][player['position_map'][1]]
-    let collision_blocks = ["water_vertical","water_horizontal",'block',"window",'wall',"water","water_2","water_left","water_merge","water_merge_2","water_right","waterfall","woda","woda_1","woda_2","woda_3","woda_4","wall_2","wall_3","ruins_2"]
+    let collision_blocks = ["water_vertical","water_horizontal",'block',"window",'wall',"water","water_2","water_left","water_merge","water_merge_2","water_right","waterfall","woda","woda_1","woda_2","woda_3","woda_4","wall_2","wall_3","ruins_2","flower_carpet_left_up","flower_carpet_up","flower_carpet_right_up","floor_up","picture2","fireplace","picture3","floor_right_up","night_stand","floor_right","carpet_right","carpet_left","table","picture1","dining_table_left","dining_table_center","dining_table_right","carpet_left_down","food1","floor_left_flower","food2","closet2","closet1","carpet2_left","carpet2_right","mirror","tiles_up","toilet","floor_left_flower2","sofa","sink","tiles_right","tiles_left","carpet2_down","carpet2_right_down","floor_right_down","floor_left_down","bath_flower"]
     if(collision_blocks.includes(map[player['y']][player['x']]))  {
         if(direction == 'up')document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*5) + "px"
         if(direction == 'down') document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*5) + "px"
         if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*5) + "px"
         if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*5) + "px"
     }
+    if(map[player['y']][player['x']] == "temple"){
+        openBattle();
+    }
+    if (map[player['y']][player['x']] == 'door') {
+        console.log(player);
+        console.log('top',document.getElementById("Character").style.top);
+        console.log('left',document.getElementById("Character").style.left);
+        maps[player['position_map'][0]][player['position_map'][1]] = buildingInterior
+        element_map(buildingInterior);
+    }
+    if (map[player['y']][player['x']] == 'floor_down') {
+        maps[player['position_map'][0]][player['position_map'][1]] = map1_C
+        element_map(map1_C);
+        player['x']= 5
+        player['y']= 4
+        document.getElementById("Character").style.top = "-785px"
+        document.getElementById("Character").style.left = "-15px"
+    }
+}
+function openBattle(){
+    document.open("/index.html");
+    document.write('<!doctype html>\n' +
+        '<html lang="en">\n' +
+        '<head>\n' +
+        '    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">\n' +
+        '    <link rel="stylesheet" href="battlestyle.css">\n' +
+        '    <script src="battle-logic.js"></script>\n' +
+        '    <title>Battle</title>\n' +
+        '</head>\n' +
+        '<body>\n' +
+        '<div id="battlearena">\n' +
+        '    <div id="Character">\n' +
+        '       <img class="Character_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />\n' +
+        '       <img id="Character-moves" class="Character_spritesheet pixelart face-down" src="static/sheet/_Idle.png" alt="Character" />\n' +
+        '    </div>\n' +
+        '    <div id="Sceleton">\n' +
+        '        <img class="Sceleton_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />\n' +
+        '        <img id="Skeleton-moves" class="Sceleton_spritesheet pixelart face-down" src="static/sheet/Skeleton%20Idle.png" alt="Sceleton" />\n' +
+        '    </div></div>\n' +
+        '<div id="battlescore">\n' +
+        '    <button id="button-attack" onclick="attackAnimation()">Attack</button>\n' +
+        '    <button id="button-goaway" role="button">Go away</button>\n' +
+        '    <div id="battleTable">\n' +
+        '    <table>\n' +
+        '        <tr>\n' +
+        '            <th>Knight</th>\n' +
+        '            <th>Skeleton</th>\n' +
+        '        </tr>\n' +
+        '        <tr>\n' +
+        '            <th id="characterHp"></th>\n' +
+        '            <th id="SkeletonHp"></th>\n' +
+        '        </tr>\n' +
+        '        <tr>\n' +
+        '            <th id="characterAttack"></th>\n' +
+        '            <th id="skeletonAttack"></th>\n' +
+        '        </tr>\n' +
+        '    </table>\n' +
+        '    </div>\n' +
+        '</div>\n' +
+        '<script src="battle-game.js"></script>\n' +
+        '</body>\n' +
+        '</html>')
 }
 
 function charMove() {

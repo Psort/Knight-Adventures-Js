@@ -21,28 +21,7 @@ function attackAnimation(){
         setTimeout(() => {
             alert("You have won!");
             document.open("/index.html");
-            document.write('<!DOCTYPE html>\n' +
-                '<html lang="en">\n' +
-                '<head>\n' +
-                '    <title>Javascript Game</title>\n' +
-                '    <meta charset="UTF-8">\n' +
-                '    <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->\n' +
-                '    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">\n' +
-                '    <link rel="stylesheet" href="style.css">\n' +
-                '</head>\n' +
-                '\n' +
-                '<body>\n' +
-                '    <div id="container">\n' +
-                '    </div>\n' +
-                '    <div id="Character">\n' +
-                '       <img class="Character_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />\n' +
-                '       <img id="Character-moves" class="Character_spritesheet pixelart face-down" src="static/sheet/_Idle.png" alt="Character" />\n' +
-                '    </div>\n' +
-                '<script src="move.js"></script>\n' +
-                '<script src="maps.js"></script>\n' +
-                '<script src="game.js"></script>\n' +
-                '</body>\n' +
-                '</html>')
+            document.write('')
         }, 5000)
     }
 }
