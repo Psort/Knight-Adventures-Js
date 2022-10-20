@@ -14,6 +14,53 @@ function try_collision(direction){
         if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*5) + "px"
         if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*5) + "px"
     }
+    if(map[player['y']][player['x']] == "temple"){
+        openBattle();
+    }
+}
+function openBattle(){
+    document.open("/index.html");
+    document.write('<!doctype html>\n' +
+        '<html lang="en">\n' +
+        '<head>\n' +
+        '    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">\n' +
+        '    <link rel="stylesheet" href="battlestyle.css">\n' +
+        '    <script src="battle-logic.js"></script>\n' +
+        '    <title>Battle</title>\n' +
+        '</head>\n' +
+        '<body>\n' +
+        '<div id="battlearena">\n' +
+        '    <div id="Character">\n' +
+        '       <img class="Character_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />\n' +
+        '       <img id="Character-moves" class="Character_spritesheet pixelart face-down" src="static/sheet/_Idle.png" alt="Character" />\n' +
+        '    </div>\n' +
+        '    <div id="Sceleton">\n' +
+        '        <img class="Sceleton_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />\n' +
+        '        <img id="Skeleton-moves" class="Sceleton_spritesheet pixelart face-down" src="static/sheet/Skeleton%20Idle.png" alt="Sceleton" />\n' +
+        '    </div></div>\n' +
+        '<div id="battlescore">\n' +
+        '    <button id="button-attack" onclick="attackAnimation()">Attack</button>\n' +
+        '    <button id="button-goaway" role="button">Go away</button>\n' +
+        '    <div id="battleTable">\n' +
+        '    <table>\n' +
+        '        <tr>\n' +
+        '            <th>Knight</th>\n' +
+        '            <th>Skeleton</th>\n' +
+        '        </tr>\n' +
+        '        <tr>\n' +
+        '            <th id="characterHp"></th>\n' +
+        '            <th id="SkeletonHp"></th>\n' +
+        '        </tr>\n' +
+        '        <tr>\n' +
+        '            <th id="characterAttack"></th>\n' +
+        '            <th id="skeletonAttack"></th>\n' +
+        '        </tr>\n' +
+        '    </table>\n' +
+        '    </div>\n' +
+        '</div>\n' +
+        '<script src="battle-game.js"></script>\n' +
+        '</body>\n' +
+        '</html>')
 }
 
 function charMove() {
