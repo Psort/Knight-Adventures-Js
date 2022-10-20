@@ -12,15 +12,14 @@ function try_collision(direction){
     if(map[player['y']][player['x']] == "temple")openBattle();
     if (map[player['y']][player['x']] == 'door') go_in_home();
     if (map[player['y']][player['x']] == 'floor_down') go_out_home();
-    if (map[player['y']][player['x']] == 'gift1')take_gift(map,'i00','tiles_inside',"url(images/inventory/gold_with_border.png)")
-    if (map[player['y']][player['x']] == 'gift2')take_gift(map,'i01','carpet_inside',"url(images/inventory/health_with_border.png)")
-    if (map[player['y']][player['x']] == 'gift3')take_gift(map,'i02','carpet2_inside',"url(images/inventory/power_with_border.png)")
-    if (map[player['y']][player['x']] == 'gift4')take_gift(map,'i03','floor_inside',"url(images/inventory/sword_with_border.png)")
+    if (map[player['y']][player['x']] == 'gift1')take_gift(map,'i00','tiles_inside',"url(static/images/inventory/sword_with_border.png")
+    if (map[player['y']][player['x']] == 'gift2')take_gift(map,'i01','carpet_inside',"url(static/images/inventory/health_with_border.png)")
+    if (map[player['y']][player['x']] == 'gift3')take_gift(map,'i02','carpet2_inside',"url(static/images/inventory/power_with_border.png)")
+    if (map[player['y']][player['x']] == 'gift4')take_gift(map,'i03','floor_inside',"url(static/images/inventory/gold_with_border.png)")
 }
 function take_gift(map,id,floor,item) {
     map[player['y']][player['x']] = floor
     element_map(buildingInterior)
-    console.log(document.getElementById(id).style.backgroundImage );
     document.getElementById(id).style.backgroundImage = item
 }
 
@@ -75,12 +74,12 @@ function openBattle(){
         '    <div id="battleTable">\n' +
         '    <table>\n' +
         '        <tr>\n' +
-        '            <th>Knight</th>\n' +
-        '            <th>Skeleton</th>\n' +
+        '            <th><h1>Knight</h1></th>\n' +
+        '            <th><h1>Skeleton</h1></th>\n' +
         '        </tr>\n' +
         '        <tr>\n' +
-        '            <th id="characterHp"></th>\n' +
-        '            <th id="SkeletonHp"></th>\n' +
+        '            <h1><th id="characterHp"></th></h1>\n' +
+        '            <h1><th id="SkeletonHp"></th></h1>\n' +
         '        </tr>\n' +
         '        <tr>\n' +
         '            <th id="characterAttack"></th>\n' +
