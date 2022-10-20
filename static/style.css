@@ -59,17 +59,18 @@ body {
     transform: translateY(250%);
     font-size: 110px;
     color: #003333;
-   font-family: 'Luminari', sans-serif;
+    font-family: 'Luminari', sans-serif;
     text-shadow: 4px 17px 15px rgba(66, 68, 90, 1);
     font-weight: revert;
 }
 
 
 .btn-hover {
+    font-family: 'Luminari', sans-serif;
     -ms-transform: translateY(400%);
     transform: translateY(320%);
     width: 300px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 60;
     color: #fff;
     cursor: pointer;
@@ -106,6 +107,12 @@ body {
 .wrapper {
     text-align: center;
     display: block;
+}
+
+.wrapper2 {
+    text-align: center;
+    display: block;
+
 
 }
 
@@ -594,13 +601,16 @@ body {
     }
 }
 #developers{
+    top: 60%;
     text-align: center;
-    font-family: Luminari;
+    font-family: 'Luminari', sans-serif;
     font-size: 60px;
 }
 #endgameTitle{
+    top: 50%;
+    font-size: 100px;
     text-align: center;
-    font-family: Luminari;
+    font-family: 'Luminari', sans-serif;
 
 
 }

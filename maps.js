@@ -1,6 +1,6 @@
 let map1_A = [['water_vertical', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block'],
 ['water_vertical', 'horizontal_road', 'left_down', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['water_vertical', 'grass', 'vertical_road', 'grass', 'right_up', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass'],
+['water_vertical', 'grass', 'vertical_road', 'temple', 'right_up', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass'],
 ['water_vertical', 'grass', 'vertical_road', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['water_vertical', 'grass', 'right_down', 'horizontal_road', 'left_up', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],

@@ -25,12 +25,14 @@ function attackAnimation(){
                 '<html lang="en">\n' +
                 '<head>\n' +
                 '    <link rel="stylesheet" href="static/style.css">\n' +
+                '    <link href="http://fonts.cdnfonts.com/css/luminari" rel="stylesheet">\n'+
                 '    <title>Battle</title>\n' +
                 '</head>\n' +
                 '<body>\n' +
                 '<h1 id="endgameTitle">THANK YOU FOR PLAYING OUR GAME</h1>\n' +
-                '<div id="developers">Developers:\n' +
                 '    <br>\n' +
+                '<div id="developers">Developers:\n' +
+                '    <br><br>\n' +
                 '    <div>Monika Markulis</div>\n' +
                 '    <br>\n' +
                 '    <div>Karolina Mazurczak</div>\n' +
@@ -39,6 +41,9 @@ function attackAnimation(){
                 '    <br>\n' +
                 '    <div>Piotr Petryka</div>\n' +
                 '    </div>\n' +
+                '    <div><form class="wrapper2" action="start.html">\n' +
+                '    <button class="btn-hover color-1" type="Submit">Play Again</button>\n' +
+                '</form></div>\n' +
                 '</body>\n' +
                 '\n')
         }, 5000)
