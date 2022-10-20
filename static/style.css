@@ -1,0 +1,543 @@
+body{
+    height: 1125px;
+    background-image: url("images/background.png");
+
+}
+#bloks{
+    float: right;
+    height: 1000px;
+    width: 300px;
+    margin-right: 300px;
+}
+#inventory{
+    background-color: #ffffff;
+    width: 300px;
+    height: 600px;
+
+}
+#minimap{
+    height: 300px;
+    width: 300px;
+    outline: 2px solid black;
+    background-image: url("mini_map/mini_map.png");
+}
+.element_minimap{
+    width: 60px;
+    height: 60px;
+    float: right;
+    
+}
+
+#container {
+    height: 1100px;
+    width: 1100px;
+    outline: 1px solid black;
+    margin: 50px auto;
+
+}
+.w {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+#vertical_road {
+    background-image: url("images/road_vertical.png");
+}
+
+#horizontal_road {
+    background-image: url("images/road_horizontal.png");
+}
+
+#water_1 {
+    background-image: url("images/woda_1.png");
+}
+
+#water_2 {
+    background-image: url("images/woda_2.png");
+}
+
+#waterfall {
+    background-image: url("images/waterfall.png");
+}
+
+#water_3 {
+    background-image: url("images/woda_3.png");
+}
+
+#water_4 {
+    background-image: url("images/woda_4.png");
+}
+
+
+#water_horizontal {
+    background-image: url("images/water.png");
+}
+
+#bridge_2 {
+    background-image: url("images/bridge_horizontal.png");
+}
+
+#water_vertical {
+    background-image: url("images/water_2.png");
+}
+
+
+#cross_road {
+    background-image: url("images/cross_road.png");
+}
+#grass {
+    background-image: url("images/grass.png");
+}
+
+#right_down {
+    background-image: url("images/dr_5.png");
+}
+
+#right_up {
+    background-image: url("images/dr_2.png");
+}
+
+#left_down {
+    background-image: url("images/dr_3.png");
+}
+
+#left_up {
+    background-image: url("images/dr_4.png");
+}
+
+#bridge {
+    background-image: url("images/bridge_vertical.png");
+}
+
+#t_up {
+    background-image: url("images/t_up.png");
+}
+#t_down {
+    background-image: url("images/t_down.png");
+}
+#t_right {
+    background-image: url("images/t_right.png");
+}
+
+#t_left {
+    background-image: url("images/t_left.png");
+}
+
+#stairs {
+    background-image: url("images/schody.png");
+}
+
+#door {
+    background-image: url("images/door.png");
+}
+
+#window {
+    background-image: url("images/window.png");
+}
+
+#beach_corner_1 {
+    background-image: url("images/beach_corner_1.bmp");
+}
+
+#beach_corner_2 {
+    background-image: url("images/beach_corner_2.bmp");
+}
+
+#beach_right {
+    background-image: url("images/beach_right.bmp");
+}
+
+#beach_down {
+    background-image: url("images/beach_down.bmp");
+}
+
+#beach_left {
+    background-image: url("images/beach_left.bmp.bmp");
+}
+
+#water_full {
+    background-image: url("images/woda.png");
+}
+
+#temple {
+    background-image: url("images/temple.png");
+}
+
+#flowers {
+    background-image: url("images/flowers.png");
+}
+
+#wall {
+    background-image: url("images/wall.png");
+}
+
+#wall_2 {
+    background-image: url("images/wall_2.png");
+}
+
+#wall_3 {
+    background-image: url("images/wall_3.png");
+}
+
+#ruins_1 {
+    background-image: url("images/ruins_1.bmp");
+}
+
+#ruins_2 {
+    background-image: url("images/ruins_2.bmp");
+}
+
+#water_merge {
+    background-image: url("images/water_merge.png");
+}
+
+#water_merge_2 {
+    background-image: url("images/water_merge_2.png");
+}
+
+#water_right {
+    background-image: url("images/water_right.png");
+}
+
+#water_left {
+    background-image: url("images/water_left.png");
+}
+
+#block {
+    background-image: url("images/block.png");
+}
+
+#area {
+    background-image: url("images/area.bmp");
+}
+#floor_down {
+    background-image: url("images/building/floorDown.png");
+}
+
+#floor_inside {
+    background-image: url("images/building/floorInside.png");
+}
+
+#floor_left {
+    background-image: url("images/building/floorLeft.png");
+}
+
+#floor_left_down {
+    background-image: url("images/building/floorLeftDown.png");
+}
+
+#floor_left_up {
+    background-image: url("images/building/floorLeftUp.png");
+}
+
+#floor_right {
+    background-image: url("images/building/floorRight.png");
+}
+
+#floor_right_down {
+    background-image: url("images/building/floorRightDown.png");
+}
+
+#floor_right_up {
+    background-image: url("images/building/floorRightUp.png");
+}
+
+#floor_up {
+    background-image: url("images/building/floorUp.png");
+}
+
+#fireplace {
+    background-image: url("images/building/fireplace.png");
+}
+
+#bed {
+    background-image: url("images/building/bed.png");
+}
+
+#bed2 {
+    background-image: url("images/building/bed2.png");
+}
+
+#closet1 {
+    background-image: url("images/building/closet1.png");
+}
+
+#closet2 {
+    background-image: url("images/building/closet2.png");
+}
+
+#sofa {
+    background-image: url("images/building/sofa.png");
+}
+
+#sofa2 {
+    background-image: url("images/building/sofa2.png");
+}
+
+#dining_table_left {
+    background-image: url("images/building/diningTableLeft.png");
+}
+
+#dining_table_center {
+    background-image: url("images/building/diningTableCenter.png");
+}
+
+#dining_table_right {
+    background-image: url("images/building/diningTableRight.png");
+}
+
+#food1 {
+    background-image: url("images/building/food1.png");
+}
+
+#food2 {
+    background-image: url("images/building/food2.png");
+}
+
+#carpet_inside {
+    background-image: url("images/building/carpet_inside.png");
+}
+
+#carpet_left {
+    background-image: url("images/building/carpetLeft.png");
+}
+
+#carpet_left_down {
+    background-image: url("images/building/carpetLeftDown.png");
+}
+
+#carpet_left_up {
+    background-image: url("images/building/carpetLeftUp.png");
+}
+
+#carpet_right {
+    background-image: url("images/building/carpetRight.png");
+}
+
+#carpet_right_down {
+    background-image: url("images/building/carpetRightDown.png");
+}
+
+#carpet_right_up {
+    background-image: url("images/building/carpetRightUp.png");
+}
+
+#carpet_up {
+    background-image: url("images/building/carpetUp.png");
+}
+
+#picture1 {
+    background-image: url("images/building/picture1.png");
+}
+
+#picture2 {
+    background-image: url("images/building/picture2.png");
+}
+
+#picture3 {
+    background-image: url("images/building/picture3.png");
+}
+
+#table {
+    background-image: url("images/building/table.png");
+}
+
+#carpet2_inside {
+    background-image: url("images/building/carpet2_inside.png");
+}
+
+#carpet2_left {
+    background-image: url("images/building/carpet2Left.png");
+}
+
+#carpet2_left_down {
+    background-image: url("images/building/carpet2LeftDown.png");
+}
+
+#carpet2_right {
+    background-image: url("images/building/carpet2Right.png");
+}
+
+#carpet2_right_down {
+    background-image: url("images/building/carpet2RightDown.png");
+}
+
+#carpet2_down {
+    background-image: url("images/building/carpet2Down.png");
+}
+
+#tiles_inside {
+    background-image: url("images/building/tiles_inside.png");
+}
+
+#tiles_left {
+    background-image: url("images/building/tilesLeft.png");
+}
+
+#tiles_left_down {
+    background-image: url("images/building/tilesLeftDown.png");
+}
+
+#tiles_right {
+    background-image: url("images/building/tilesRight.png");
+}
+
+#tiles_right_up {
+    background-image: url("images/building/tilesRightUp.png");
+}
+
+#tiles_right_down {
+    background-image: url("images/building/tilesRightDown.png");
+}
+
+#tiles_down {
+    background-image: url("images/building/tilesDown.png");
+}
+
+#tiles_up {
+    background-image: url("images/building/tilesUp.png");
+}
+
+#mirror {
+    background-image: url("images/building/mirror.png");
+}
+
+#sink {
+    background-image: url("images/building/sink.png");
+}
+
+#toilet {
+    background-image: url("images/building/toilet.png");
+}
+
+#bath {
+    background-image: url("images/building/bath.png");
+}
+
+#bath_flower {
+    background-image: url("images/building/bath_flower.png");
+}
+
+#floor_left_flower {
+    background-image: url("images/building/floorLeftFlower.png");
+}
+
+#floor_left_flower2 {
+    background-image: url("images/building/flower2.png");
+}
+
+#night_stand {
+    background-image: url("images/building/nightStand.png");
+}
+
+#flower_carpet_left_up {
+    background-image: url("images/building/flowerCarpetLeftUp.png");
+}
+
+#flower_carpet_right_up {
+    background-image: url("images/building/flowerCarpetRightUp.png");
+}
+
+#flower_carpet_up {
+    background-image: url("images/building/flowerCarpetUp.png");
+}
+
+#gift1 {
+    background-image: url("images/building/gift1.png");
+}
+
+#gift2 {
+    background-image: url("images/building/gift2.png");
+}
+
+#gift3 {
+    background-image: url("images/building/gift3.png");
+}
+
+#gift4 {
+    background-image: url("images/building/gift4.png");
+}
+
+:root {
+    --pixel-size: 10;
+}
+
+#Character {
+    width: calc(16px * var(--pixel-size));
+    height: calc(16px * var(--pixel-size));
+    overflow: hidden;
+    position: relative;
+    margin: 4em auto;
+}
+
+.Character_spritesheet {
+    animation: moveSpritesheet 0.75s steps(10) infinite;
+    width: calc(175px * var(--pixel-size));
+    position: absolute;
+
+}
+.Character_shadow {
+    position: absolute;
+    top: 43px;
+    left: 40px;
+    width: calc(8px * var(--pixel-size));
+    height: calc(8px * var(--pixel-size));
+}
+
+.pixelart {
+    image-rendering: pixelated;
+}
+
+.face-right {
+    top: calc(-100px * var(--pixel-size));
+}
+
+.face-up {
+    top: calc(-150px * var(--pixel-size));
+}
+
+.face-left {
+    top: calc(-200px * var(--pixel-size));
+}
+
+.screen {
+    height: 1100px;
+    width: 1100px;
+    outline: 1px solid black;
+    margin: 50px auto;
+    background-image: url("images/grass.png");
+    text-align: center;
+    position: relative;
+
+
+}
+
+button {
+    -ms-transform: translateY(750%);
+    transform: translateY(750%);
+    border: none;
+    appearance: none;
+    outline: none;
+    display: inline-block;
+    font-size: 2em;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 48px 12px 48px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #003333;
+    border: 2px solid #ffffff;
+}
+
+
+@keyframes moveSpritesheet {
+    from {
+        transform: translate3d(0px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0)
+    }
+}

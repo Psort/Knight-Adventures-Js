@@ -1,103 +1,5 @@
-
-
-let elementL_right_up = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'right_down', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
-
-let elementL_left_up = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_up', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
-
-let elementL_left_down = [['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
-
-let elementL_right_down = [['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'right_up', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
-
-const elementI = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
-
-const element_line = [['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass']]
-
-const elementX = [['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'cross_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
-
-const test = [['grass', '1', 'grass', '1', 'grass', 'vertical_road', 'grass', '1', 'grass', '1', 'grass'],
-['1', 'water', '1', 'grass', '1', 'vertical_road', '1', 'grass', '1', 'grass', '1'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['1', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'cross_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'horizontal_road'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['1', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['1', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass'],
-['grass', 'grass', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'grass', 'grass']]
-
 let map1_A = [['water_vertical', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block', 'block'],
-['bridge_2', 'horizontal_road', 'left_down', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
+['water_vertical', 'horizontal_road', 'left_down', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass'],
 ['water_vertical', 'grass', 'vertical_road', 'grass', 'right_up', 'horizontal_road', 'horizontal_road', 'horizontal_road', 'left_down', 'grass', 'grass'],
 ['water_vertical', 'grass', 'vertical_road', 'grass', 'vertical_road', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
 ['water_vertical', 'grass', 'right_down', 'horizontal_road', 'left_up', 'grass', 'grass', 'grass', 'vertical_road', 'grass', 'grass'],
@@ -372,6 +274,7 @@ let map5_C = [['water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'g
 ['water_merge', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down', 'beach_down'],
 ['water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full', 'water_full']]
 
+
 let map5_D = [['grass', 'grass', 'water_vertical', 'grass', 'grass', 'grass', 'grass', 'grass', 'grass', 'water_vertical', 'grass'],
 ['grass', 'grass', 'water_1', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_horizontal', 'water_4', 'grass'],
 ['grass', 'grass', 'grass', 'grass', 'grass', 'flowers', 'grass', 'grass', 'grass', 'grass', 'grass'],
@@ -408,15 +311,32 @@ let buildingInterior = [['flower_carpet_left_up', 'flower_carpet_up', 'flower_ca
 ['carpet2_left', 'carpet2_inside', 'carpet2_inside', 'carpet2_right', 'floor_inside', 'floor_inside', 'floor_inside', 'tiles_left', 'tiles_inside', 'bath', 'tiles_right'],
 ['gift3', 'bed2', 'carpet2_down', 'carpet2_right_down', 'floor_right_down', 'floor_down', 'floor_left_down', 'bath_flower', 'tiles_down', 'tiles_down', 'gift1']]
 
-
+let maps = [[map1_A,map1_B,map1_C,map1_D,map1_E],[map2_A,map2_B,map2_C,map2_D,map2_E],[map3_A,map3_B,map3_C,map3_D,map3_E],[map4_A,map4_B,map4_C,map4_D,map4_E],[map5_A,map5_B,map5_C,map5_D,map5_E]]
+let mini_maps = [["map1_A","map1_B","map1_C","map1_D","map1_E"],["map2_A","map2_B","map2_C","map2_D","map2_E"],["map3_A","map3_B","map3_C","map3_D","map3_E"],["map4_A","map4_B","map4_C","map4_D","map4_E"],["map5_A","map5_B","map5_C","map5_D","map5_E"]]
 function element_map(map) {
     let divh = ''
     for (let i = 0; i < 11; i++) {
         let divw = ''
         for (let j = 0; j < 11; j++) {
-            divw += "<div id ='" + map[i][j] + "' class = 'w'></div>"
+            divw += "<div id ='"+map[i][j]+"' class = 'w'></div>"
         }
         divh += "<div>" + divw + "</div>"
     }
     document.getElementById('container').innerHTML = divh
+}
+function render_minimap() {
+let divh = ''
+for (let i = 0; i < 7; i++) {
+    let divw = ''
+    for (let j = 4; j >= 0; j--) {
+        divw += "<div id = '"+i+j+"' class='element_minimap'></div>"
+    }
+    divh += "<div>" + divw + "</div>"
+}
+    console.log(divh);
+    document.getElementById('minimap').innerHTML = divh
+}
+
+function change_map() {
+    element_map(maps[player['position_map'][0]][player['position_map'][1]]);
 }
