@@ -25,6 +25,7 @@ function attackAnimation(){
                 '<html lang="en">\n' +
                 '<head>\n' +
                 '    <link rel="stylesheet" href="static/style.css">\n' +
+                '    <link href="http://fonts.cdnfonts.com/css/luminari" rel="stylesheet">\n' +
                 '    <title>Battle</title>\n' +
                 '</head>\n' +
                 '<body>\n' +
@@ -39,6 +40,9 @@ function attackAnimation(){
                 '    <br>\n' +
                 '    <div>Piotr Petryka</div>\n' +
                 '    </div>\n' +
+                '    <div><form class="wrapper" action="start.html">\n' +
+                '    <button class="btn-hover color-1" type="Submit">Play Again</button>\n' +
+                '    </form></div>\n' +
                 '</body>\n' +
                 '\n')
         }, 5000)
