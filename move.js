@@ -5,34 +5,50 @@ const y = 1
 
 
 function try_collision(direction){
-    console.log(player);
     let map = maps[player['position_map'][0]][player['position_map'][1]]
     let collision_blocks = ["water_vertical","water_horizontal",'block',"window",'wall',"water","water_2","water_left","water_merge","water_merge_2","water_right","waterfall","woda","woda_1","woda_2","woda_3","woda_4","wall_2","wall_3","ruins_2","flower_carpet_left_up","flower_carpet_up","flower_carpet_right_up","carpet_right_down","floor_up","picture2","fireplace","picture3","floor_right_up","night_stand","floor_right","carpet_right","carpet_left","table","picture1","dining_table_left","dining_table_center","dining_table_right","carpet_left_down","carpet2_left_down","food1","bed2","floor_left_flower","food2","closet2","closet1","carpet2_left","carpet2_right","mirror","tiles_up","toilet","floor_left_flower2","sofa","sink","tiles_right","tiles_left","tiles_down","tiles_right_down","carpet2_down","carpet2_right_down","floor_right_down","floor_right","floor_left","floor_left_down","bath_flower"]
-    if(collision_blocks.includes(map[player['y']][player['x']]))  {
-        if(direction == 'up')document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) + (runValue*5) + "px"
-        if(direction == 'down') document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top ) - (runValue*5) + "px"
-        if(direction == 'left') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) + (runValue*5) + "px"
-        if(direction == 'right') document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left ) - (runValue*5) + "px"
-    }
-    if(map[player['y']][player['x']] == "temple"){
-        openBattle();
-    }
-    if (map[player['y']][player['x']] == 'door') {
-        console.log(player);
-        console.log('top',document.getElementById("Character").style.top);
-        console.log('left',document.getElementById("Character").style.left);
-        maps[player['position_map'][0]][player['position_map'][1]] = buildingInterior
-        element_map(buildingInterior);
-    }
-    if (map[player['y']][player['x']] == 'floor_down') {
-        maps[player['position_map'][0]][player['position_map'][1]] = map1_C
-        element_map(map1_C);
-        player['x']= 5
-        player['y']= 4
-        document.getElementById("Character").style.top = "-785px"
-        document.getElementById("Character").style.left = "-15px"
-    }
+    
+    if(collision_blocks.includes(map[player['y']][player['x']]))dont_move(direction);
+    if(map[player['y']][player['x']] == "temple")openBattle();
+    if (map[player['y']][player['x']] == 'door') go_in_home();
+    if (map[player['y']][player['x']] == 'floor_down') go_out_home();
+    if (map[player['y']][player['x']] == 'gift1')take_gift(map,'i00','tiles_inside',"url(images/inventory/gold_with_border.png)")
+    if (map[player['y']][player['x']] == 'gift2')take_gift(map,'i01','carpet_inside',"url(images/inventory/health_with_border.png)")
+    if (map[player['y']][player['x']] == 'gift3')take_gift(map,'i02','carpet2_inside',"url(images/inventory/power_with_border.png)")
+    if (map[player['y']][player['x']] == 'gift4')take_gift(map,'i03','floor_inside',"url(images/inventory/sword_with_border.png)")
 }
+function take_gift(map,id,floor,item) {
+    map[player['y']][player['x']] = floor
+    element_map(buildingInterior)
+    console.log(document.getElementById(id).style.backgroundImage );
+    document.getElementById(id).style.backgroundImage = item
+}
+
+function dont_move(direction) {
+    if (direction == 'up')
+        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top) + (runValue * 5) + "px";
+    if (direction == 'down')
+        document.getElementById("Character").style.top = parseInt(document.getElementById("Character").style.top) - (runValue * 5) + "px";
+    if (direction == 'left')
+        document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left) + (runValue * 5) + "px";
+    if (direction == 'right')
+        document.getElementById("Character").style.left = parseInt(document.getElementById("Character").style.left) - (runValue * 5) + "px";
+}
+
+function go_out_home() {
+    maps[player['position_map'][0]][player['position_map'][1]] = map1_C;
+    element_map(map1_C);
+    player['x'] = 5;
+    player['y'] = 4;
+    document.getElementById("Character").style.top = "-785px";
+    document.getElementById("Character").style.left = "-15px";
+}
+
+function go_in_home() {
+    maps[player['position_map'][0]][player['position_map'][1]] = buildingInterior;
+    element_map(buildingInterior);
+}
+
 function openBattle(){
     document.open("/index.html");
     document.write('<!doctype html>\n' +

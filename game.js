@@ -11,16 +11,3 @@ function initGame() {
     click_move();
 }
 
-
-// function toggleScreen(id, toggle) {
-//     let element = document.getElementById(id);
-//     let display = (toggle) ? 'block' : 'none';
-//     element.style.display = display;
-// }
-// function startGame() {
-//     this.toggleScreen('start-screen', false);
-//     this.toggleScreen('container', true);
-//     this.toggleScreen('Character', true);
-//     initGame();
-// }
-

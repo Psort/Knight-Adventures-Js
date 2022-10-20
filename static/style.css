@@ -18,7 +18,7 @@ body {
 }
 
 #inventory {
-    background-image: url(images/inventory/whole_inventory.png);
+    background-image: url(images/inventory/whole_inventory_300x600.png);
     width: 300px;
     height: 600px;
 
@@ -41,6 +41,7 @@ body {
     width: 60px;
     height: 60px;
     float: right;
+    background-image: url(images/inventory/board.png);
 }
 #minimap {
     height: 300px;
@@ -98,7 +99,6 @@ body {
     background-size: 300% 100%;
 
     border-radius: 20px;
-    moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -110,7 +110,6 @@ body {
 
 .btn-hover:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
