@@ -311,8 +311,16 @@ let buildingInterior = [['flower_carpet_left_up', 'flower_carpet_up', 'flower_ca
 ['carpet2_left', 'gift3', 'carpet2_inside', 'carpet2_right', 'floor_inside', 'floor_inside', 'floor_inside', 'tiles_left', 'tiles_inside', 'bath', 'tiles_right'],
 ['carpet2_left_down', 'bed2', 'carpet2_down', 'carpet2_right_down', 'floor_right_down', 'floor_down', 'floor_left_down', 'bath_flower', 'tiles_down', 'tiles_down', 'tiles_right_down']]
 
-let maps = [[map1_A,map1_B,map1_C,map1_D,map1_E],[map2_A,map2_B,map2_C,map2_D,map2_E],[map3_A,map3_B,map3_C,map3_D,map3_E],[map4_A,map4_B,map4_C,map4_D,map4_E],[map5_A,map5_B,map5_C,map5_D,map5_E]]
-let mini_maps = [["map1_A","map1_B","map1_C","map1_D","map1_E"],["map2_A","map2_B","map2_C","map2_D","map2_E"],["map3_A","map3_B","map3_C","map3_D","map3_E"],["map4_A","map4_B","map4_C","map4_D","map4_E"],["map5_A","map5_B","map5_C","map5_D","map5_E"]]
+let maps = [[map1_A,map1_B,map1_C,map1_D,map1_E],
+            [map2_A,map2_B,map2_C,map2_D,map2_E],
+            [map3_A,map3_B,map3_C,map3_D,map3_E],
+            [map4_A,map4_B,map4_C,map4_D,map4_E],
+            [map5_A,map5_B,map5_C,map5_D,map5_E]]
+let mini_maps = [["map1_A","map1_B","map1_C","map1_D","map1_E"],
+                ["map2_A","map2_B","map2_C","map2_D","map2_E"],
+                ["map3_A","map3_B","map3_C","map3_D","map3_E"],
+                ["map4_A","map4_B","map4_C","map4_D","map4_E"],
+                ["map5_A","map5_B","map5_C","map5_D","map5_E"]]
 
 function element_map(map) {
     let divh = ''
@@ -338,6 +346,7 @@ for (let i = 0; i < 5; i++) {
 }
     document.getElementById('minimap').innerHTML = divh
 }
+
 function render_inventory() {
     let divh = ''
     for (let i = 0; i <7; i++) {
