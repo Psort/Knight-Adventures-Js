@@ -343,7 +343,7 @@ function render_inventory() {
     for (let i = 0; i <7; i++) {
         let divw = ''
         for (let j = 3; j >= 0; j--) {
-            divw += "<div id = '"+i+j+"' class='item'></div>"
+            divw += "<div id = 'i"+i+j+"' class='item'></div>"
         }
         divh += "<div>" + divw + "</div>"
     }
