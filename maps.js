@@ -331,11 +331,11 @@ let divh = ''
 for (let i = 0; i < 5; i++) {
     let divw = ''
     for (let j = 4; j >= 0; j--) {
-        divw += "<div id = '"+i+j+"' class='element_minimap'><img src='static/mini_map/"+mini_maps[i][j]+"_minimap.png'></div>"
+        if(i==0 && j==0)divw += "<div id = '"+i+j+"' class='element_minimap'><img src='static/mini_map/"+mini_maps[i][j]+"_minimap.png'></img></div>"
+        else divw += "<div id = '"+i+j+"' class='element_minimap'></div>"
     }
     divh += "<div>" + divw + "</div>"
 }
-
     document.getElementById('minimap').innerHTML = divh
 }
 
@@ -352,6 +352,7 @@ function minimap_light_up() {
             if (playerId == id){
                 let light = document.getElementById(id);
                 light.style.filter = 'brightness(100%)'
+                light.innerHTML = "<img src='static/mini_map/"+mini_maps[i][j]+"_minimap.png'>"
             }
             else document.getElementById(id).style.filter = 'brightness(50%)'
             }
