@@ -5,15 +5,15 @@
 }
 
 body {
-    height: 1125px;
+    height: 562.5px;
     background-image: url("images/background.png");
 
 }
 
 #bloks {
     float: right;
-    height: 1000px;
-    width: 300px;
+    height: 500px;
+    width: 150px;
     margin-right: 300px;
 }
 
@@ -24,34 +24,34 @@ body {
 
 }
 #inventory_head{
-    width: 300px;
-    height: 120px;
+    width: 150px;
+    height: 60px;
 }
 #inventory_body{
     height: 480px;
     width: 300px;
 } 
 #inventory_items{
-    width: 240px;
-    height: 420px;
+    width: 120px;
+    height: 210px;
     padding-top: 30px;
     margin: auto;
 }
 .item{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     float: right;
     background-image: url(images/inventory/board.png);
 }
 #minimap {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     outline: 2px solid black;
 }
 
 .element_minimap {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     float: right;
     filter: brightness(50%);
     background-color: gray;
