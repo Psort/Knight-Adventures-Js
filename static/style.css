@@ -7,7 +7,7 @@
 body {
     height: 562.5px;
     background-image: url("images/background.png");
-
+    margin-left: -400px
 }
 
 #bloks {
@@ -18,40 +18,47 @@ body {
 }
 
 #inventory {
+    margin-right: -300px;
     background-image: url(images/inventory/whole_inventory_300x600.png);
     width: 300px;
     height: 600px;
 
 }
 #inventory_head{
+    margin-right: -300px;
     width: 150px;
     height: 60px;
 }
 #inventory_body{
+    margin-right: -300px;
     height: 480px;
     width: 300px;
 } 
 #inventory_items{
-    width: 120px;
-    height: 210px;
+    margin-left: 15px;
+    margin-top: 40px;
+    width: 268px;
+    height: 240px;
     padding-top: 30px;
-    margin: auto;
+
 }
 .item{
-    width: 30px;
-    height: 30px;
+
+    width: 67px;
+    height: 67px;
     float: right;
     background-image: url(images/inventory/board.png);
 }
 #minimap {
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     outline: 2px solid black;
+
 }
 
 .element_minimap {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     float: right;
     filter: brightness(50%);
     background-color: gray;
@@ -590,15 +597,15 @@ body {
 }
 
 .face-right {
-    top: calc(-100px * var(--pixel-size));
+    top: calc(-50px * var(--pixel-size));
 }
 
 .face-up {
-    top: calc(-150px * var(--pixel-size));
+    top: calc(-75px * var(--pixel-size));
 }
 
 .face-left {
-    top: calc(-200px * var(--pixel-size));
+    top: calc(-100px * var(--pixel-size));
 }
 
 @keyframes moveSpritesheet {
