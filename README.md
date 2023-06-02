@@ -8,7 +8,7 @@ venturing through diverse locations in search of glory and honor. Collecting pow
 the knight must confront increasingly challenging foes to restore peace and bring justice to the world.
 Will the valiant knight successfully face the dark monsters and become a legendary hero?
 
-![20230529_182536]((https://github.com/Psort/Knight-Adventures-Js/blob/development/20230529_182536.gif))
+![20230529_182536](https://github.com/Psort/Knight-Adventures-Js/blob/development/20230529_182536.gif)
 ## ⭐ Technology stack
 
 <div>
